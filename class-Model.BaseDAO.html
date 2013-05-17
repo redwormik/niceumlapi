@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Model\BaseDAO</title>
+
+	<script type="text/javascript" src="resources/combined.js?1196931423"></script>
+	<script type="text/javascript" src="elementlist.js?312666996"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-ClassModule.html">ClassModule<span></span></a>
+						<ul>
+				<li><a href="namespace-ClassModule.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-ClassModule.Model.Entity.html">Entity</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="active"><a href="namespace-Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Model.Database.html">Database</a>
+						</li>
+				<li><a href="namespace-Model.Entity.html">Entity</a>
+						</li>
+				<li><a href="namespace-Model.Security.html">Security</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Model.BaseChildDAO.html">BaseChildDAO</a></li>
+				<li class="active"><a href="class-Model.BaseDAO.html">BaseDAO</a></li>
+				<li><a href="class-Model.Command.html">Command</a></li>
+				<li><a href="class-Model.DiagramDAO.html">DiagramDAO</a></li>
+				<li><a href="class-Model.ElementDAO.html">ElementDAO</a></li>
+				<li><a href="class-Model.PlacementDAO.html">PlacementDAO</a></li>
+				<li><a href="class-Model.ProjectDAO.html">ProjectDAO</a></li>
+				<li><a href="class-Model.RelationDAO.html">RelationDAO</a></li>
+				<li><a href="class-Model.UserDAO.html">UserDAO</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-Model.ICommandModel.html">ICommandModel</a></li>
+				<li><a href="class-Model.ISourceModel.html">ISourceModel</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Model.html" title="Summary of Model"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class BaseDAO</h1>
+
+
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+Nette\Object
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>Model\BaseDAO</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-Model.BaseChildDAO.html">Model\BaseChildDAO</a>, 
+			<a href="class-Model.DiagramDAO.html">Model\DiagramDAO</a>, 
+			<a href="class-Model.ElementDAO.html">Model\ElementDAO</a>, 
+			<a href="class-Model.PlacementDAO.html">Model\PlacementDAO</a>, 
+			<a href="class-Model.ProjectDAO.html">Model\ProjectDAO</a>, 
+			<a href="class-Model.RelationDAO.html">Model\RelationDAO</a>, 
+			<a href="class-Model.UserDAO.html">Model\UserDAO</a>
+	</div>
+
+	<div>
+		<h4>Indirect known subclasses</h4>
+			<a href="class-ClassModule.Model.Association.html">ClassModule\Model\Association</a>, 
+			<a href="class-ClassModule.Model.ClassType.html">ClassModule\Model\ClassType</a>
+	</div>
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Model.html">Model</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-Model.BaseDAO.html#11-112" title="Go to source code">model/BaseDAO.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Model.BaseDAO.html#26-31" title="Go to source code">__construct</a>( <span>mixed <var>$tableName</var></span>, <span>Nette\Database\Connection <var>$connection</var></span>, <span><code><a href="class-Model.Database.IEntityFactory.html">Model\Database\IEntityFactory</a></code> <var>$entityFactory</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="table" id="_table">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_table">#</a>
+		<code><a href="source-class-Model.BaseDAO.html#34-37" title="Go to source code">table</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getNewEntityTable" id="_getNewEntityTable">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getNewEntityTable">#</a>
+		<code><a href="source-class-Model.BaseDAO.html#40-45" title="Go to source code">getNewEntityTable</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="create" id="_create">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_create">#</a>
+		<code><a href="source-class-Model.BaseDAO.html#48-56" title="Go to source code">create</a>( <span>mixed <var>$data</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get" id="_get">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get">#</a>
+		<code><a href="source-class-Model.BaseDAO.html#59-62" title="Go to source code">get</a>( <span>mixed <var>$id</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="save" id="_save">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_save">#</a>
+		<code><a href="source-class-Model.BaseDAO.html#65-80" title="Go to source code">save</a>( <span><code><a href="class-Model.Entity.BaseEntity.html">Model\Entity\BaseEntity</a></code> <var>$entity</var> = <span class="php-keyword1">NULL</span></span>, <span>mixed <var>$data</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="delete" id="_delete">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_delete">#</a>
+		<code><a href="source-class-Model.BaseDAO.html#83-86" title="Go to source code">delete</a>( <span><code><a href="class-Model.Entity.BaseEntity.html">Model\Entity\BaseEntity</a></code> <var>$entity</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isNew" id="_isNew">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isNew">#</a>
+		<code><a href="source-class-Model.BaseDAO.html#89-92" title="Go to source code">isNew</a>( <span><code><a href="class-Model.Entity.BaseEntity.html">Model\Entity\BaseEntity</a></code> <var>$entity</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="beginTransaction" id="_beginTransaction">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_beginTransaction">#</a>
+		<code><a href="source-class-Model.BaseDAO.html#95-98" title="Go to source code">beginTransaction</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="commit" id="_commit">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_commit">#</a>
+		<code><a href="source-class-Model.BaseDAO.html#101-104" title="Go to source code">commit</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="rollBack" id="_rollBack">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_rollBack">#</a>
+		<code><a href="source-class-Model.BaseDAO.html#107-110" title="Go to source code">rollBack</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="tableName" id="$tableName">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Model.BaseDAO.html#13-14" title="Go to source code"><var>$tableName</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$tableName" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="connection" id="$connection">
+		<td class="attributes"><code>
+			protected  
+			Nette\Database\Connection
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Model.BaseDAO.html#16-17" title="Go to source code"><var>$connection</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$connection" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="entityFactory" id="$entityFactory">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-Model.Database.IEntityFactory.html">Model\Database\IEntityFactory</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Model.BaseDAO.html#19-20" title="Go to source code"><var>$entityFactory</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$entityFactory" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="newEntityTable" id="$newEntityTable">
+		<td class="attributes"><code>
+			protected  
+			NewEntityTable
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Model.BaseDAO.html#22-23" title="Go to source code"><var>$newEntityTable</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$newEntityTable" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

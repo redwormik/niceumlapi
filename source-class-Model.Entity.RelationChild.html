@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+	<meta name="robots" content="noindex" />
+
+	<title>File model/entity/RelationChild.php</title>
+
+	<script type="text/javascript" src="resources/combined.js?1196931423"></script>
+	<script type="text/javascript" src="elementlist.js?312666996"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-ClassModule.html">ClassModule<span></span></a>
+						<ul>
+				<li><a href="namespace-ClassModule.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-ClassModule.Model.Entity.html">Entity</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="active"><a href="namespace-Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Model.Database.html">Database</a>
+						</li>
+				<li class="active"><a href="namespace-Model.Entity.html">Entity</a>
+						</li>
+				<li><a href="namespace-Model.Security.html">Security</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Model.Entity.BaseChild.html">BaseChild</a></li>
+				<li><a href="class-Model.Entity.BaseEntity.html">BaseEntity</a></li>
+				<li><a href="class-Model.Entity.Diagram.html">Diagram</a></li>
+				<li><a href="class-Model.Entity.Element.html">Element</a></li>
+				<li><a href="class-Model.Entity.ElementChild.html">ElementChild</a></li>
+				<li><a href="class-Model.Entity.Note.html">Note</a></li>
+				<li><a href="class-Model.Entity.Placement.html">Placement</a></li>
+				<li><a href="class-Model.Entity.Project.html">Project</a></li>
+				<li><a href="class-Model.Entity.Relation.html">Relation</a></li>
+				<li class="active"><a href="class-Model.Entity.RelationChild.html">RelationChild</a></li>
+				<li><a href="class-Model.Entity.User.html">User</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Model.Entity.html" title="Summary of Model\Entity"><span>Namespace</span></a>
+			</li>
+			<li>
+				<a href="class-Model.Entity.RelationChild.html" title="Summary of Model\Entity\RelationChild"><span>Class</span></a>
+			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<pre><code><span id="1" class="l"><a class="l" href="#1"> 1: </a><span class="xlang">&lt;?php</span>
+</span><span id="2" class="l"><a class="l" href="#2"> 2: </a>
+</span><span id="3" class="l"><a class="l" href="#3"> 3: </a><span class="php-keyword1">namespace</span> Model\Entity;
+</span><span id="4" class="l"><a class="l" href="#4"> 4: </a>
+</span><span id="5" class="l"><a class="l" href="#5"> 5: </a>
+</span><span id="6" class="l"><a class="l" href="#6"> 6: </a><span class="php-keyword1">class</span> <a id="RelationChild" href="#RelationChild">RelationChild</a> <span class="php-keyword1">extends</span> BaseChild {
+</span><span id="7" class="l"><a class="l" href="#7"> 7: </a>
+</span><span id="8" class="l"><a class="l" href="#8"> 8: </a>    <span class="php-keyword1">protected</span> <span class="php-var"><a id="$parentFields" href="#$parentFields">$parentFields</a></span> = <span class="php-keyword1">array</span>(<span class="php-quote">'name'</span>, <span class="php-quote">'start'</span>, <span class="php-quote">'start_id'</span>, <span class="php-quote">'end'</span>, <span class="php-quote">'end_id'</span>, <span class="php-quote">'type'</span>);
+</span><span id="9" class="l"><a class="l" href="#9"> 9: </a>    <span class="php-keyword1">protected</span> <span class="php-var"><a id="$parentMethods" href="#$parentMethods">$parentMethods</a></span> = <span class="php-keyword1">array</span>(<span class="php-quote">'setStart'</span>, <span class="php-quote">'setEnd'</span>, <span class="php-quote">'getOtherEnd'</span>);
+</span><span id="10" class="l"><a class="l" href="#10">10: </a>
+</span><span id="11" class="l"><a class="l" href="#11">11: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_setParent" href="#_setParent">setParent</a>(BaseEntity <span class="php-var">$parent</span>) {
+</span><span id="12" class="l"><a class="l" href="#12">12: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$parent</span> <span class="php-keyword1">instanceof</span> Relation)
+</span><span id="13" class="l"><a class="l" href="#13">13: </a>            <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> \Nette\InvalidArgumentException;
+</span><span id="14" class="l"><a class="l" href="#14">14: </a>        <span class="php-keyword1">return</span> parent::setParent(<span class="php-var">$parent</span>);
+</span><span id="15" class="l"><a class="l" href="#15">15: </a>    }
+</span><span id="16" class="l"><a class="l" href="#16">16: </a>
+</span><span id="17" class="l"><a class="l" href="#17">17: </a>}
+</span><span id="18" class="l"><a class="l" href="#18">18: </a></span></code></pre>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
