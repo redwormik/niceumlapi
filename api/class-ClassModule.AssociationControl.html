@@ -7,7 +7,7 @@
 	<title>Class ClassModule\AssociationControl</title>
 
 	<script type="text/javascript" src="resources/combined.js?1196931423"></script>
-	<script type="text/javascript" src="elementlist.js?312666996"></script>
+	<script type="text/javascript" src="elementlist.js?1300325317"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -53,8 +53,6 @@
 				<li class="active"><a href="class-ClassModule.AssociationControl.html">AssociationControl</a></li>
 				<li><a href="class-ClassModule.ClassControl.html">ClassControl</a></li>
 				<li><a href="class-ClassModule.ClassDiagramControl.html">ClassDiagramControl</a></li>
-				<li><a href="class-ClassModule.Interpreter.html">Interpreter</a></li>
-				<li><a href="class-ClassModule.Parser.html">Parser</a></li>
 			</ul>
 
 
@@ -118,6 +116,8 @@ Nette\Application\UI\Control
 			<img src="resources/inherit.png" alt="Extended by" />
 			<a href="class-RelationControl.html"><span>RelationControl</span></a>
 			
+			 implements 
+				<a href="class-IRelationControl.html"><span>IRelationControl</span></a>
 			
 			
 		</dd>
@@ -142,20 +142,117 @@ Nette\Application\UI\Control
 		<b>Namespace:</b> <a href="namespace-ClassModule.html">ClassModule</a><br />
 		
 
-		<b>Located at</b> <a href="source-class-ClassModule.AssociationControl.html#6-8" title="Go to source code">ClassModule/AssociationControl.php</a><br />
+		<b>Located at</b> <a href="source-class-ClassModule.AssociationControl.html#13-39" title="Go to source code">ClassModule/AssociationControl.php</a><br />
 	</div>
 
 
 
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-ClassModule.AssociationControl.html#15-18" title="Go to source code">__construct</a>( <span><code><a href="class-ClassModule.Model.AssociationDAO.html">ClassModule\Model\AssociationDAO</a></code> <var>$model</var></span>, <span><code><a href="class-Model.RelationType.html">Model\RelationType</a></code> <var>$types</var></span>, <span><code><a href="class-Model.ElementDAO.html">Model\ElementDAO</a></code> <var>$elementModel</var></span>, <span><code><a href="class-FormFactory.html">FormFactory</a></code> <var>$formFactory</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-RelationControl.html#___construct">RelationControl::__construct()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setRelation" id="_setRelation">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setRelation">#</a>
+		<code><a href="source-class-ClassModule.AssociationControl.html#21-24" title="Go to source code">setRelation</a>( <span><code><a href="class-Model.Entity.Relation.html">Model\Entity\Relation</a></code> <var>$relation</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-RelationControl.html#_setRelation">RelationControl::setRelation()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addFormControls" id="_addFormControls">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addFormControls">#</a>
+		<code><a href="source-class-ClassModule.AssociationControl.html#27-36" title="Go to source code">addFormControls</a>( <span>mixed <var>$form</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-RelationControl.html#_addFormControls">RelationControl::addFormControls()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
 
 	<table class="summary inherited">
 	<caption>Methods inherited from <a href="class-RelationControl.html#methods">RelationControl</a></caption>
 	<tr>
 		<td><code>
-			<a href="class-RelationControl.html#___construct">__construct()</a>, 
 			<a href="class-RelationControl.html#_createComponentForm">createComponentForm()</a>, 
 			<a href="class-RelationControl.html#_formSucceeded">formSucceeded()</a>, 
-			<a href="class-RelationControl.html#_render">render()</a>
+			<a href="class-RelationControl.html#_render">render()</a>, 
+			<a href="class-RelationControl.html#_setElement">setElement()</a>, 
+			<a href="class-RelationControl.html#_setType">setType()</a>
 		</code></td>
 	</tr>
 	</table>
@@ -183,9 +280,13 @@ Nette\Application\UI\Control
 	<caption>Properties inherited from <a href="class-RelationControl.html#properties">RelationControl</a></caption>
 	<tr>
 		<td><code>
+			<a href="class-RelationControl.html#$element"><var>$element</var></a>, 
+			<a href="class-RelationControl.html#$elementModel"><var>$elementModel</var></a>, 
 			<a href="class-RelationControl.html#$formFactory"><var>$formFactory</var></a>, 
 			<a href="class-RelationControl.html#$model"><var>$model</var></a>, 
-			<a href="class-RelationControl.html#$relation"><var>$relation</var></a>
+			<a href="class-RelationControl.html#$relation"><var>$relation</var></a>, 
+			<a href="class-RelationControl.html#$type"><var>$type</var></a>, 
+			<a href="class-RelationControl.html#$types"><var>$types</var></a>
 		</code></td>
 	</tr>
 	</table>

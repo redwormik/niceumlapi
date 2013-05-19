@@ -7,7 +7,7 @@
 	<title>Class ElementControl</title>
 
 	<script type="text/javascript" src="resources/combined.js?1196931423"></script>
-	<script type="text/javascript" src="elementlist.js?312666996"></script>
+	<script type="text/javascript" src="elementlist.js?1300325317"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -52,37 +52,23 @@
 			<ul>
 				<li><a href="class-BaseControl.html">BaseControl</a></li>
 				<li><a href="class-BasePresenter.html">BasePresenter</a></li>
+				<li><a href="class-CommandException.html">CommandException</a></li>
 				<li><a href="class-ConsoleControl.html">ConsoleControl</a></li>
 				<li><a href="class-ConsoleControlFactory.html">ConsoleControlFactory</a></li>
-				<li><a href="class-DiagramControl.html">DiagramControl</a></li>
 				<li><a href="class-DiagramControlFactory.html">DiagramControlFactory</a></li>
-				<li><a href="class-DiagramMenuControlFactory.html">DiagramMenuControlFactory</a></li>
 				<li><a href="class-DiagramPresenter.html">DiagramPresenter</a></li>
-				<li><a href="class-DiagramRelationControlFactory.html">DiagramRelationControlFactory</a></li>
 				<li class="active"><a href="class-ElementControl.html">ElementControl</a></li>
 				<li><a href="class-ElementControlFactory.html">ElementControlFactory</a></li>
 				<li><a href="class-ElementPresenter.html">ElementPresenter</a></li>
-				<li><a href="class-EntityExtension.html">EntityExtension</a></li>
 				<li><a href="class-ErrorPresenter.html">ErrorPresenter</a></li>
 				<li><a href="class-ForgotPresenter.html">ForgotPresenter</a></li>
 				<li><a href="class-FormFactory.html">FormFactory</a></li>
 				<li><a href="class-HomepagePresenter.html">HomepagePresenter</a></li>
-				<li><a href="class-InterpreterList.html">InterpreterList</a></li>
-				<li><a href="class-InterpretingException.html">InterpretingException</a></li>
 				<li><a href="class-MailFactory.html">MailFactory</a></li>
 				<li><a href="class-MenuControl.html">MenuControl</a></li>
 				<li><a href="class-MenuControlFactory.html">MenuControlFactory</a></li>
 				<li><a href="class-ModellingPresenter.html">ModellingPresenter</a></li>
-				<li><a href="class-NewDiagramControl.html">NewDiagramControl</a></li>
-				<li><a href="class-NewDiagramControlFactory.html">NewDiagramControlFactory</a></li>
-				<li><a href="class-NewElementControl.html">NewElementControl</a></li>
-				<li><a href="class-NewElementControlFactory.html">NewElementControlFactory</a></li>
-				<li><a href="class-NewRelationControl.html">NewRelationControl</a></li>
-				<li><a href="class-NewRelationControlFactory.html">NewRelationControlFactory</a></li>
 				<li><a href="class-NoteControl.html">NoteControl</a></li>
-				<li><a href="class-ParserList.html">ParserList</a></li>
-				<li><a href="class-ParsingException.html">ParsingException</a></li>
-				<li><a href="class-PlacementControlFactory.html">PlacementControlFactory</a></li>
 				<li><a href="class-ProjectPresenter.html">ProjectPresenter</a></li>
 				<li><a href="class-ProjectTreeControl.html">ProjectTreeControl</a></li>
 				<li><a href="class-ProjectTreeControlFactory.html">ProjectTreeControlFactory</a></li>
@@ -93,31 +79,16 @@
 				<li><a href="class-SourceControl.html">SourceControl</a></li>
 				<li><a href="class-SourceControlFactory.html">SourceControlFactory</a></li>
 				<li><a href="class-SourceException.html">SourceException</a></li>
+				<li><a href="class-UmaskedFileStorage.html">UmaskedFileStorage</a></li>
 				<li><a href="class-UserPresenter.html">UserPresenter</a></li>
 			</ul>
 
 			<h3>Interfaces</h3>
 			<ul>
-				<li><a href="class-IConsoleControlFactory.html">IConsoleControlFactory</a></li>
-				<li><a href="class-IDiagramControlFactory.html">IDiagramControlFactory</a></li>
-				<li><a href="class-IDiagramMenuControlFactory.html">IDiagramMenuControlFactory</a></li>
-				<li><a href="class-IDiagramRelationControlFactory.html">IDiagramRelationControlFactory</a></li>
-				<li><a href="class-IElementControlFactory.html">IElementControlFactory</a></li>
-				<li><a href="class-IFormFactory.html">IFormFactory</a></li>
-				<li><a href="class-IInterpreter.html">IInterpreter</a></li>
-				<li><a href="class-ILoginControlFactory.html">ILoginControlFactory</a></li>
-				<li><a href="class-IMailFactory.html">IMailFactory</a></li>
-				<li><a href="class-IMenuControlFactory.html">IMenuControlFactory</a></li>
-				<li><a href="class-INewDiagramControlFactory.html">INewDiagramControlFactory</a></li>
-				<li><a href="class-INewElementControlFactory.html">INewElementControlFactory</a></li>
-				<li><a href="class-INewRelationControlFactory.html">INewRelationControlFactory</a></li>
-				<li><a href="class-IParser.html">IParser</a></li>
-				<li><a href="class-IPlacementControlFactory.html">IPlacementControlFactory</a></li>
-				<li><a href="class-IProjectAccessControlFactory.html">IProjectAccessControlFactory</a></li>
-				<li><a href="class-IProjectTreeControlFactory.html">IProjectTreeControlFactory</a></li>
-				<li><a href="class-IRelationControlFactory.html">IRelationControlFactory</a></li>
+				<li><a href="class-IDiagramControl.html">IDiagramControl</a></li>
+				<li><a href="class-IElementControl.html">IElementControl</a></li>
+				<li><a href="class-IRelationControl.html">IRelationControl</a></li>
 				<li><a href="class-IRouterFactory.html">IRouterFactory</a></li>
-				<li><a href="class-ISourceControlFactory.html">ISourceControlFactory</a></li>
 			</ul>
 
 
@@ -179,6 +150,8 @@ Nette\Application\UI\Control
 		<dd style="padding-left:60px">
 			<img src="resources/inherit.png" alt="Extended by" />
 <b><span>ElementControl</span></b>			
+			 implements 
+				<a href="class-IElementControl.html"><span>IElementControl</span></a>
 			
 			
 		</dd>
@@ -202,7 +175,7 @@ Nette\Application\UI\Control
 		
 		
 
-		<b>Located at</b> <a href="source-class-ElementControl.html#5-117" title="Go to source code">components/ElementControl.php</a><br />
+		<b>Located at</b> <a href="source-class-ElementControl.html#4-98" title="Go to source code">components/ElementControl.php</a><br />
 	</div>
 
 
@@ -220,7 +193,7 @@ Nette\Application\UI\Control
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-ElementControl.html#32-42" title="Go to source code">__construct</a>( <span><code><a href="class-Model.Entity.Element.html">Model\Entity\Element</a></code> <var>$element</var></span>, <span><code><a href="class-Model.BaseDAO.html">Model\BaseDAO</a></code> <var>$elementModel</var></span>, <span><code><a href="class-Model.BaseDAO.html">Model\BaseDAO</a></code> <var>$relationModel</var></span>, <span><code><a href="class-INewRelationControlFactory.html">INewRelationControlFactory</a></code> <var>$newRel</var></span>, <span><code><a href="class-IRelationControlFactory.html">IRelationControlFactory</a></code> <var>$editRel</var></span>, <span><code><a href="class-IFormFactory.html">IFormFactory</a></code> <var>$formFactory</var></span> )</code>
+		<code><a href="source-class-ElementControl.html#24-28" title="Go to source code">__construct</a>( <span><code><a href="class-Model.BaseDAO.html">Model\BaseDAO</a></code> <var>$model</var></span>, <span><code><a href="class-Model.ElementType.html">Model\ElementType</a></code> <var>$types</var></span>, <span><code><a href="class-FormFactory.html">FormFactory</a></code> <var>$formFactory</var></span> )</code>
 
 		<div class="description short">
 			
@@ -238,7 +211,7 @@ Nette\Application\UI\Control
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="handleDeleteRelation" id="_handleDeleteRelation">
+	<tr data-order="setElement" id="_setElement">
 
 		<td class="attributes"><code>
 			 public 
@@ -248,8 +221,8 @@ Nette\Application\UI\Control
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_handleDeleteRelation">#</a>
-		<code><a href="source-class-ElementControl.html#45-52" title="Go to source code">handleDeleteRelation</a>( )</code>
+		<a class="anchor" href="#_setElement">#</a>
+		<code><a href="source-class-ElementControl.html#31-34" title="Go to source code">setElement</a>( <span><code><a href="class-Model.Entity.Element.html">Model\Entity\Element</a></code> <var>$element</var></span> )</code>
 
 		<div class="description short">
 			
@@ -264,6 +237,70 @@ Nette\Application\UI\Control
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-IElementControl.html#_setElement">IElementControl::setElement()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setType" id="_setType">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setType">#</a>
+		<code><a href="source-class-ElementControl.html#37-42" title="Go to source code">setType</a>( <span>mixed <var>$type</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-IElementControl.html#_setType">IElementControl::setType()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setProject" id="_setProject">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setProject">#</a>
+		<code><a href="source-class-ElementControl.html#45-48" title="Go to source code">setProject</a>( <span><code><a href="class-Model.Entity.Project.html">Model\Entity\Project</a></code> <var>$project</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-IElementControl.html#_setProject">IElementControl::setProject()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -278,7 +315,7 @@ Nette\Application\UI\Control
 
 		<td class="name"><div>
 		<a class="anchor" href="#_render">#</a>
-		<code><a href="source-class-ElementControl.html#55-61" title="Go to source code">render</a>( )</code>
+		<code><a href="source-class-ElementControl.html#51-53" title="Go to source code">render</a>( )</code>
 
 		<div class="description short">
 			
@@ -295,6 +332,8 @@ Nette\Application\UI\Control
 				<h4>Overrides</h4>
 				<div class="list"><code><a href="class-BaseControl.html#_render">BaseControl::render()</a></code></div>
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-IElementControl.html#_render">IElementControl::render()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -309,7 +348,36 @@ Nette\Application\UI\Control
 
 		<td class="name"><div>
 		<a class="anchor" href="#_createComponentForm">#</a>
-		<code><a href="source-class-ElementControl.html#64-75" title="Go to source code">createComponentForm</a>( )</code>
+		<code><a href="source-class-ElementControl.html#56-71" title="Go to source code">createComponentForm</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addFormControls" id="_addFormControls">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addFormControls">#</a>
+		<code><a href="source-class-ElementControl.html#74-76" title="Go to source code">addFormControls</a>( <span>mixed <var>$form</var></span> )</code>
 
 		<div class="description short">
 			
@@ -338,7 +406,7 @@ Nette\Application\UI\Control
 
 		<td class="name"><div>
 		<a class="anchor" href="#_checkUniqueName">#</a>
-		<code><a href="source-class-ElementControl.html#78-84" title="Go to source code">checkUniqueName</a>( <span>mixed <var>$input</var></span> )</code>
+		<code><a href="source-class-ElementControl.html#79-84" title="Go to source code">checkUniqueName</a>( <span>mixed <var>$input</var></span> )</code>
 
 		<div class="description short">
 			
@@ -367,94 +435,7 @@ Nette\Application\UI\Control
 
 		<td class="name"><div>
 		<a class="anchor" href="#_formSucceeded">#</a>
-		<code><a href="source-class-ElementControl.html#87-91" title="Go to source code">formSucceeded</a>( <span>mixed <var>$form</var></span> )</code>
-
-		<div class="description short">
-			
-		</div>
-
-		<div class="description detailed hidden">
-			
-
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="createComponentNewRelationControl" id="_createComponentNewRelationControl">
-
-		<td class="attributes"><code>
-			 protected 
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_createComponentNewRelationControl">#</a>
-		<code><a href="source-class-ElementControl.html#94-96" title="Go to source code">createComponentNewRelationControl</a>( )</code>
-
-		<div class="description short">
-			
-		</div>
-
-		<div class="description detailed hidden">
-			
-
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="createComponentRelationControl" id="_createComponentRelationControl">
-
-		<td class="attributes"><code>
-			 protected 
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_createComponentRelationControl">#</a>
-		<code><a href="source-class-ElementControl.html#99-102" title="Go to source code">createComponentRelationControl</a>( )</code>
-
-		<div class="description short">
-			
-		</div>
-
-		<div class="description detailed hidden">
-			
-
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="checkRelation" id="_checkRelation">
-
-		<td class="attributes"><code>
-			 protected 
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_checkRelation">#</a>
-		<code><a href="source-class-ElementControl.html#105-114" title="Go to source code">checkRelation</a>( <span>mixed <var>$id</var></span> )</code>
+		<code><a href="source-class-ElementControl.html#87-96" title="Go to source code">formSucceeded</a>( <span>mixed <var>$form</var></span> )</code>
 
 		<div class="description short">
 			
@@ -495,44 +476,18 @@ Nette\Application\UI\Control
 
 	<table class="summary" id="properties">
 	<caption>Properties summary</caption>
-	<tr data-order="relation" id="$relation">
-		<td class="attributes"><code>
-			public  
-			mixed
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-ElementControl.html#7-8" title="Go to source code"><var>$relation</var></a>
-		</td>
-		<td class="value"><code></code></td>
-		<td class="description"><div>
-			<a href="#$relation" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-					<h4>Persistent</h4>
-					<div class="list">
-					</div>
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="elementModel" id="$elementModel">
+	<tr data-order="model" id="$model">
 		<td class="attributes"><code>
 			protected  
 			<code><a href="class-Model.BaseDAO.html">Model\BaseDAO</a></code>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-ElementControl.html#10-11" title="Go to source code"><var>$elementModel</var></a>
+				<a href="source-class-ElementControl.html#7-8" title="Go to source code"><var>$model</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
-			<a href="#$elementModel" class="anchor">#</a>
+			<a href="#$model" class="anchor">#</a>
 
 			<div class="description short">
 				
@@ -544,64 +499,18 @@ Nette\Application\UI\Control
 			</div>
 		</div></td>
 	</tr>
-	<tr data-order="relationModel" id="$relationModel">
+	<tr data-order="types" id="$types">
 		<td class="attributes"><code>
 			protected  
-			<code><a href="class-Model.BaseDAO.html">Model\BaseDAO</a></code>
+			<code><a href="class-Model.ElementType.html">Model\ElementType</a></code>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-ElementControl.html#13-14" title="Go to source code"><var>$relationModel</var></a>
+				<a href="source-class-ElementControl.html#10-11" title="Go to source code"><var>$types</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
-			<a href="#$relationModel" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="newRelationControlFactory" id="$newRelationControlFactory">
-		<td class="attributes"><code>
-			protected  
-			<code><a href="class-INewRelationControlFactory.html">INewRelationControlFactory</a></code>
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-ElementControl.html#16-17" title="Go to source code"><var>$newRelationControlFactory</var></a>
-		</td>
-		<td class="value"><code></code></td>
-		<td class="description"><div>
-			<a href="#$newRelationControlFactory" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="relationControlFactory" id="$relationControlFactory">
-		<td class="attributes"><code>
-			protected  
-			<code><a href="class-IRelationControlFactory.html">IRelationControlFactory</a></code>
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-ElementControl.html#19-20" title="Go to source code"><var>$relationControlFactory</var></a>
-		</td>
-		<td class="value"><code></code></td>
-		<td class="description"><div>
-			<a href="#$relationControlFactory" class="anchor">#</a>
+			<a href="#$types" class="anchor">#</a>
 
 			<div class="description short">
 				
@@ -616,11 +525,11 @@ Nette\Application\UI\Control
 	<tr data-order="formFactory" id="$formFactory">
 		<td class="attributes"><code>
 			protected  
-			<code><a href="class-IFormFactory.html">IFormFactory</a></code>
+			<code><a href="class-FormFactory.html">FormFactory</a></code>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-ElementControl.html#22-23" title="Go to source code"><var>$formFactory</var></a>
+				<a href="source-class-ElementControl.html#13-14" title="Go to source code"><var>$formFactory</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -643,11 +552,57 @@ Nette\Application\UI\Control
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-ElementControl.html#25-26" title="Go to source code"><var>$element</var></a>
+				<a href="source-class-ElementControl.html#16-17" title="Go to source code"><var>$element</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
 			<a href="#$element" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="type" id="$type">
+		<td class="attributes"><code>
+			protected  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-ElementControl.html#19" title="Go to source code"><var>$type</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$type" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="project" id="$project">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-Model.Entity.Project.html">Model\Entity\Project</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-ElementControl.html#21-22" title="Go to source code"><var>$project</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$project" class="anchor">#</a>
 
 			<div class="description short">
 				

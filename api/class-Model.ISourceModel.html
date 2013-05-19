@@ -7,7 +7,7 @@
 	<title>Interface Model\ISourceModel</title>
 
 	<script type="text/javascript" src="resources/combined.js?1196931423"></script>
-	<script type="text/javascript" src="elementlist.js?312666996"></script>
+	<script type="text/javascript" src="elementlist.js?1300325317"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -52,12 +52,20 @@
 			<ul>
 				<li><a href="class-Model.BaseChildDAO.html">BaseChildDAO</a></li>
 				<li><a href="class-Model.BaseDAO.html">BaseDAO</a></li>
-				<li><a href="class-Model.Command.html">Command</a></li>
+				<li><a href="class-Model.CommandModelList.html">CommandModelList</a></li>
 				<li><a href="class-Model.DiagramDAO.html">DiagramDAO</a></li>
+				<li><a href="class-Model.DiagramSource.html">DiagramSource</a></li>
+				<li><a href="class-Model.DiagramType.html">DiagramType</a></li>
 				<li><a href="class-Model.ElementDAO.html">ElementDAO</a></li>
+				<li><a href="class-Model.ElementSource.html">ElementSource</a></li>
+				<li><a href="class-Model.ElementType.html">ElementType</a></li>
+				<li><a href="class-Model.EntityExtension.html">EntityExtension</a></li>
+				<li><a href="class-Model.NoteSource.html">NoteSource</a></li>
 				<li><a href="class-Model.PlacementDAO.html">PlacementDAO</a></li>
 				<li><a href="class-Model.ProjectDAO.html">ProjectDAO</a></li>
 				<li><a href="class-Model.RelationDAO.html">RelationDAO</a></li>
+				<li><a href="class-Model.RelationSource.html">RelationSource</a></li>
+				<li><a href="class-Model.RelationType.html">RelationType</a></li>
 				<li><a href="class-Model.UserDAO.html">UserDAO</a></li>
 			</ul>
 
@@ -116,9 +124,9 @@
 
 	<div>
 		<h4>Direct known implementers</h4>
-			<a href="class-ClassModule.Model.Association.html">ClassModule\Model\Association</a>, 
-			<a href="class-ClassModule.Model.ClassType.html">ClassModule\Model\ClassType</a>, 
-			<a href="class-Model.DiagramDAO.html">Model\DiagramDAO</a>
+			<a href="class-ClassModule.Model.AssociationDAO.html">ClassModule\Model\AssociationDAO</a>, 
+			<a href="class-ClassModule.Model.ClassDAO.html">ClassModule\Model\ClassDAO</a>, 
+			<a href="class-Model.NoteSource.html">Model\NoteSource</a>
 	</div>
 
 
@@ -148,7 +156,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_load">#</a>
-		<code><a href="source-class-Model.ISourceModel.html#9" title="Go to source code">load</a>( <span><code><a href="class-Model.Entity.Project.html">Model\Entity\Project</a></code> <var>$project</var></span>, <span>mixed <var>$name</var></span>, <span>mixed <var>$source</var></span> )</code>
+		<code><a href="source-class-Model.ISourceModel.html#9" title="Go to source code">load</a>( <span>array <var>$source</var></span>, <span><code><a href="class-Model.Entity.Project.html">Model\Entity\Project</a></code> <var>$project</var></span>, <span>mixed <var>$original</var> = <span class="php-keyword1">NULL</span></span> )</code>
 
 		<div class="description short">
 			
@@ -177,7 +185,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_dump">#</a>
-		<code><a href="source-class-Model.ISourceModel.html#11" title="Go to source code">dump</a>( <span><code><a href="class-Model.Entity.Project.html">Model\Entity\Project</a></code> <var>$project</var></span> )</code>
+		<code><a href="source-class-Model.ISourceModel.html#11" title="Go to source code">dump</a>( <span>mixed <var>$item</var></span> )</code>
 
 		<div class="description short">
 			

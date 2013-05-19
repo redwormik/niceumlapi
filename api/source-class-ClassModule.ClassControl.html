@@ -8,7 +8,7 @@
 	<title>File ClassModule/ClassControl.php</title>
 
 	<script type="text/javascript" src="resources/combined.js?1196931423"></script>
-	<script type="text/javascript" src="elementlist.js?312666996"></script>
+	<script type="text/javascript" src="elementlist.js?1300325317"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -54,8 +54,6 @@
 				<li><a href="class-ClassModule.AssociationControl.html">AssociationControl</a></li>
 				<li class="active"><a href="class-ClassModule.ClassControl.html">ClassControl</a></li>
 				<li><a href="class-ClassModule.ClassDiagramControl.html">ClassDiagramControl</a></li>
-				<li><a href="class-ClassModule.Interpreter.html">Interpreter</a></li>
-				<li><a href="class-ClassModule.Parser.html">Parser</a></li>
 			</ul>
 
 
@@ -102,38 +100,36 @@
 </span><span id="2" class="l"><a class="l" href="#2"> 2: </a>
 </span><span id="3" class="l"><a class="l" href="#3"> 3: </a><span class="php-keyword1">namespace</span> ClassModule;
 </span><span id="4" class="l"><a class="l" href="#4"> 4: </a>
-</span><span id="5" class="l"><a class="l" href="#5"> 5: </a><span class="php-keyword1">use</span> Nette\Utils\Neon;
-</span><span id="6" class="l"><a class="l" href="#6"> 6: </a>
-</span><span id="7" class="l"><a class="l" href="#7"> 7: </a>
-</span><span id="8" class="l"><a class="l" href="#8"> 8: </a><span class="php-keyword1">class</span> <a id="ClassControl" href="#ClassControl">ClassControl</a> <span class="php-keyword1">extends</span> \ElementControl {
-</span><span id="9" class="l"><a class="l" href="#9"> 9: </a>
-</span><span id="10" class="l"><a class="l" href="#10">10: </a>    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> <a id="_createComponentForm" href="#_createComponentForm">createComponentForm</a>() {
-</span><span id="11" class="l"><a class="l" href="#11">11: </a>        <span class="php-var">$form</span> = parent::createComponentForm();
-</span><span id="12" class="l"><a class="l" href="#12">12: </a>        <span class="php-keyword1">unset</span>(<span class="php-var">$form</span>[<span class="php-quote">'send'</span>]);
+</span><span id="5" class="l"><a class="l" href="#5"> 5: </a><span class="php-keyword1">use</span> ElementControl,
+</span><span id="6" class="l"><a class="l" href="#6"> 6: </a>    FormFactory,
+</span><span id="7" class="l"><a class="l" href="#7"> 7: </a>    Model\ElementType,
+</span><span id="8" class="l"><a class="l" href="#8"> 8: </a>    Model\Entity\Element,
+</span><span id="9" class="l"><a class="l" href="#9"> 9: </a>    ClassModule\Model\ClassDAO;
+</span><span id="10" class="l"><a class="l" href="#10">10: </a>
+</span><span id="11" class="l"><a class="l" href="#11">11: </a>
+</span><span id="12" class="l"><a class="l" href="#12">12: </a><span class="php-keyword1">class</span> <a id="ClassControl" href="#ClassControl">ClassControl</a> <span class="php-keyword1">extends</span> ElementControl {
 </span><span id="13" class="l"><a class="l" href="#13">13: </a>
-</span><span id="14" class="l"><a class="l" href="#14">14: </a>        <span class="php-var">$class</span> = <span class="php-var">$this</span>-&gt;elementModel-&gt;getByParent(<span class="php-var">$this</span>-&gt;element);
-</span><span id="15" class="l"><a class="l" href="#15">15: </a>
-</span><span id="16" class="l"><a class="l" href="#16">16: </a>        <span class="php-var">$form</span>-&gt;addCheckbox(<span class="php-quote">'abstract'</span>, <span class="php-quote">'Abstract'</span>);
-</span><span id="17" class="l"><a class="l" href="#17">17: </a>        <span class="php-var">$form</span>-&gt;addCheckbox(<span class="php-quote">'static'</span>, <span class="php-quote">'Static'</span>);
+</span><span id="14" class="l"><a class="l" href="#14">14: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="___construct" href="#___construct">__construct</a>(ClassDAO <span class="php-var">$model</span>, ElementType <span class="php-var">$types</span>, FormFactory <span class="php-var">$formFactory</span>)
+</span><span id="15" class="l"><a class="l" href="#15">15: </a>    {
+</span><span id="16" class="l"><a class="l" href="#16">16: </a>        parent::__construct(<span class="php-var">$model</span>, <span class="php-var">$types</span>, <span class="php-var">$formFactory</span>);
+</span><span id="17" class="l"><a class="l" href="#17">17: </a>    }
 </span><span id="18" class="l"><a class="l" href="#18">18: </a>
-</span><span id="19" class="l"><a class="l" href="#19">19: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$class</span>)
-</span><span id="20" class="l"><a class="l" href="#20">20: </a>            <span class="php-var">$form</span>-&gt;setDefaults(<span class="php-var">$class</span>);
-</span><span id="21" class="l"><a class="l" href="#21">21: </a>
-</span><span id="22" class="l"><a class="l" href="#22">22: </a>        <span class="php-var">$form</span>-&gt;addSubmit(<span class="php-quote">'send'</span>, <span class="php-quote">'Save'</span>);
-</span><span id="23" class="l"><a class="l" href="#23">23: </a>        <span class="php-keyword1">return</span> <span class="php-var">$form</span>;
-</span><span id="24" class="l"><a class="l" href="#24">24: </a>    }
+</span><span id="19" class="l"><a class="l" href="#19">19: </a>
+</span><span id="20" class="l"><a class="l" href="#20">20: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_setElement" href="#_setElement">setElement</a>(Element <span class="php-var">$element</span>)
+</span><span id="21" class="l"><a class="l" href="#21">21: </a>    {
+</span><span id="22" class="l"><a class="l" href="#22">22: </a>        <span class="php-var">$this</span>-&gt;element = <span class="php-var">$this</span>-&gt;model-&gt;getByParent(<span class="php-var">$element</span>);
+</span><span id="23" class="l"><a class="l" href="#23">23: </a>    }
+</span><span id="24" class="l"><a class="l" href="#24">24: </a>
 </span><span id="25" class="l"><a class="l" href="#25">25: </a>
-</span><span id="26" class="l"><a class="l" href="#26">26: </a>
-</span><span id="27" class="l"><a class="l" href="#27">27: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_formSucceeded" href="#_formSucceeded">formSucceeded</a>(<span class="php-var">$form</span>) {
-</span><span id="28" class="l"><a class="l" href="#28">28: </a>        <span class="php-var">$values</span> = <span class="php-var">$form</span>-&gt;values;
-</span><span id="29" class="l"><a class="l" href="#29">29: </a>
-</span><span id="30" class="l"><a class="l" href="#30">30: </a>        <span class="php-var">$this</span>-&gt;elementModel-&gt;save(<span class="php-var">$this</span>-&gt;elementModel-&gt;getByParent(<span class="php-var">$this</span>-&gt;element), <span class="php-var">$values</span>);
-</span><span id="31" class="l"><a class="l" href="#31">31: </a>        <span class="php-var">$this</span>-&gt;presenter-&gt;flashMessage(<span class="php-quote">'Data saved.'</span>);
-</span><span id="32" class="l"><a class="l" href="#32">32: </a>        <span class="php-var">$this</span>-&gt;redirect(<span class="php-quote">'this'</span>);
-</span><span id="33" class="l"><a class="l" href="#33">33: </a>    }
-</span><span id="34" class="l"><a class="l" href="#34">34: </a>
-</span><span id="35" class="l"><a class="l" href="#35">35: </a>}
-</span><span id="36" class="l"><a class="l" href="#36">36: </a></span></code></pre>
+</span><span id="26" class="l"><a class="l" href="#26">26: </a>    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> <a id="_addFormControls" href="#_addFormControls">addFormControls</a>(<span class="php-var">$form</span>) {
+</span><span id="27" class="l"><a class="l" href="#27">27: </a>        <span class="php-var">$form</span>-&gt;addCheckbox(<span class="php-quote">'abstract'</span>, <span class="php-quote">'Abstract'</span>);
+</span><span id="28" class="l"><a class="l" href="#28">28: </a>        <span class="php-var">$form</span>-&gt;addCheckbox(<span class="php-quote">'static'</span>, <span class="php-quote">'Static'</span>);
+</span><span id="29" class="l"><a class="l" href="#29">29: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;element)
+</span><span id="30" class="l"><a class="l" href="#30">30: </a>            <span class="php-var">$form</span>-&gt;setDefaults(<span class="php-var">$this</span>-&gt;element-&gt;parent);
+</span><span id="31" class="l"><a class="l" href="#31">31: </a>    }
+</span><span id="32" class="l"><a class="l" href="#32">32: </a>
+</span><span id="33" class="l"><a class="l" href="#33">33: </a>}
+</span><span id="34" class="l"><a class="l" href="#34">34: </a></span></code></pre>
 
 	<div id="footer">
 		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
