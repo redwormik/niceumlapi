@@ -7,7 +7,7 @@
 	<title>Class ClassModule\ClassDiagramControl</title>
 
 	<script type="text/javascript" src="resources/combined.js?1196931423"></script>
-	<script type="text/javascript" src="elementlist.js?1300325317"></script>
+	<script type="text/javascript" src="elementlist.js?1195901333"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -40,6 +40,8 @@
 				<li><a href="namespace-None.html">None</a>
 						</li>
 				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Test.html">Test</a>
 						</li>
 			</ul>
 		</div>
@@ -98,6 +100,11 @@
 	<h1>Class ClassDiagramControl</h1>
 
 
+	<div class="description">
+	
+<p>Class diagram renderer</p>
+
+	</div>
 
 	<dl class="tree">
 		<dd style="padding-left:0px">
@@ -135,7 +142,7 @@ Nette\Application\UI\Control
 		<b>Namespace:</b> <a href="namespace-ClassModule.html">ClassModule</a><br />
 		
 
-		<b>Located at</b> <a href="source-class-ClassModule.ClassDiagramControl.html#12-68" title="Go to source code">ClassModule/ClassDiagramControl.php</a><br />
+		<b>Located at</b> <a href="source-class-ClassModule.ClassDiagramControl.html#12-80" title="Go to source code">app/ClassModule/ClassDiagramControl.php</a><br />
 	</div>
 
 
@@ -153,7 +160,7 @@ Nette\Application\UI\Control
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-ClassModule.ClassDiagramControl.html#21-24" title="Go to source code">__construct</a>( <span><code><a href="class-Model.ElementDAO.html">Model\ElementDAO</a></code> <var>$elementModel</var></span>, <span><code><a href="class-Model.RelationDAO.html">Model\RelationDAO</a></code> <var>$relationModel</var></span> )</code>
+		<code><a href="source-class-ClassModule.ClassDiagramControl.html#28-32" title="Go to source code">__construct</a>( <span><code><a href="class-Model.ElementDAO.html">Model\ElementDAO</a></code> <var>$elementModel</var></span>, <span><code><a href="class-Model.RelationDAO.html">Model\RelationDAO</a></code> <var>$relationModel</var></span> )</code>
 
 		<div class="description short">
 			
@@ -182,7 +189,7 @@ Nette\Application\UI\Control
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setDiagram">#</a>
-		<code><a href="source-class-ClassModule.ClassDiagramControl.html#27-30" title="Go to source code">setDiagram</a>( <span><code><a href="class-Model.Entity.Diagram.html">Model\Entity\Diagram</a></code> <var>$diagram</var></span> )</code>
+		<code><a href="source-class-ClassModule.ClassDiagramControl.html#35-39" title="Go to source code">setDiagram</a>( <span><code><a href="class-Model.Entity.Diagram.html">Model\Entity\Diagram</a></code> <var>$diagram</var></span> )</code>
 
 		<div class="description short">
 			
@@ -213,7 +220,7 @@ Nette\Application\UI\Control
 
 		<td class="name"><div>
 		<a class="anchor" href="#_beforeRender">#</a>
-		<code><a href="source-class-ClassModule.ClassDiagramControl.html#33-51" title="Go to source code">beforeRender</a>( )</code>
+		<code><a href="source-class-ClassModule.ClassDiagramControl.html#42-61" title="Go to source code">beforeRender</a>( )</code>
 
 		<div class="description short">
 			
@@ -242,7 +249,7 @@ Nette\Application\UI\Control
 
 		<td class="name"><div>
 		<a class="anchor" href="#_render">#</a>
-		<code><a href="source-class-ClassModule.ClassDiagramControl.html#54-59" title="Go to source code">render</a>( )</code>
+		<code><a href="source-class-ClassModule.ClassDiagramControl.html#64-70" title="Go to source code">render</a>( )</code>
 
 		<div class="description short">
 			
@@ -275,7 +282,7 @@ Nette\Application\UI\Control
 
 		<td class="name"><div>
 		<a class="anchor" href="#_renderScripts">#</a>
-		<code><a href="source-class-ClassModule.ClassDiagramControl.html#62-67" title="Go to source code">renderScripts</a>( )</code>
+		<code><a href="source-class-ClassModule.ClassDiagramControl.html#73-79" title="Go to source code">renderScripts</a>( )</code>
 
 		<div class="description short">
 			
@@ -321,11 +328,11 @@ Nette\Application\UI\Control
 	<tr data-order="diagram" id="$diagram">
 		<td class="attributes"><code>
 			protected  
-			mixed
+			<code><a href="class-Model.Entity.Diagram.html">Model\Entity\Diagram</a></code>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-ClassModule.ClassDiagramControl.html#14" title="Go to source code"><var>$diagram</var></a>
+				<a href="source-class-ClassModule.ClassDiagramControl.html#18-19" title="Go to source code"><var>$diagram</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -344,11 +351,11 @@ Nette\Application\UI\Control
 	<tr data-order="elementModel" id="$elementModel">
 		<td class="attributes"><code>
 			protected  
-			mixed
+			<code><a href="class-Model.ElementDAO.html">Model\ElementDAO</a></code>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-ClassModule.ClassDiagramControl.html#15" title="Go to source code"><var>$elementModel</var></a>
+				<a href="source-class-ClassModule.ClassDiagramControl.html#20-21" title="Go to source code"><var>$elementModel</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -367,38 +374,15 @@ Nette\Application\UI\Control
 	<tr data-order="relationModel" id="$relationModel">
 		<td class="attributes"><code>
 			protected  
-			mixed
+			<code><a href="class-Model.RelationDAO.html">Model\RelationDAO</a></code>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-ClassModule.ClassDiagramControl.html#16" title="Go to source code"><var>$relationModel</var></a>
+				<a href="source-class-ClassModule.ClassDiagramControl.html#22-23" title="Go to source code"><var>$relationModel</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
 			<a href="#$relationModel" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="formFactory" id="$formFactory">
-		<td class="attributes"><code>
-			protected  
-			mixed
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-ClassModule.ClassDiagramControl.html#17" title="Go to source code"><var>$formFactory</var></a>
-		</td>
-		<td class="value"><code></code></td>
-		<td class="description"><div>
-			<a href="#$formFactory" class="anchor">#</a>
 
 			<div class="description short">
 				
@@ -417,7 +401,7 @@ Nette\Application\UI\Control
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-ClassModule.ClassDiagramControl.html#19" title="Go to source code"><var>$rendered</var></a>
+				<a href="source-class-ClassModule.ClassDiagramControl.html#24-25" title="Go to source code"><var>$rendered</var></a>
 		</td>
 		<td class="value"><code><span class="php-keyword1">FALSE</span></code></td>
 		<td class="description"><div>

@@ -7,7 +7,7 @@
 	<title>Class ClassModule\Model\CommandModel</title>
 
 	<script type="text/javascript" src="resources/combined.js?1196931423"></script>
-	<script type="text/javascript" src="elementlist.js?1300325317"></script>
+	<script type="text/javascript" src="elementlist.js?1195901333"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -40,6 +40,8 @@
 				<li><a href="namespace-None.html">None</a>
 						</li>
 				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Test.html">Test</a>
 						</li>
 			</ul>
 		</div>
@@ -98,6 +100,11 @@
 	<h1>Class CommandModel</h1>
 
 
+	<div class="description">
+	
+<p>Class for command interpreting</p>
+
+	</div>
 
 	<dl class="tree">
 		<dd style="padding-left:0px">
@@ -128,7 +135,7 @@ Nette\Object
 		<b>Namespace:</b> <a href="namespace-ClassModule.html">ClassModule</a>\<a href="namespace-ClassModule.Model.html">Model</a><br />
 		
 
-		<b>Located at</b> <a href="source-class-ClassModule.Model.CommandModel.html#15-106" title="Go to source code">ClassModule/model/CommandModel.php</a><br />
+		<b>Located at</b> <a href="source-class-ClassModule.Model.CommandModel.html#15-122" title="Go to source code">app/ClassModule/model/CommandModel.php</a><br />
 	</div>
 
 
@@ -146,7 +153,7 @@ Nette\Object
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-ClassModule.Model.CommandModel.html#24-29" title="Go to source code">__construct</a>( <span><code><a href="class-Model.ElementDAO.html">Model\ElementDAO</a></code> <var>$elements</var></span>, <span><code><a href="class-ClassModule.Model.ClassDAO.html">ClassModule\Model\ClassDAO</a></code> <var>$classes</var></span>, <span><code><a href="class-Model.DiagramDAO.html">Model\DiagramDAO</a></code> <var>$diagrams</var></span>, <span><code><a href="class-Model.PlacementDAO.html">Model\PlacementDAO</a></code> <var>$placements</var></span> )</code>
+		<code><a href="source-class-ClassModule.Model.CommandModel.html#31-37" title="Go to source code">__construct</a>( <span><code><a href="class-Model.ElementDAO.html">Model\ElementDAO</a></code> <var>$elements</var></span>, <span><code><a href="class-ClassModule.Model.ClassDAO.html">ClassModule\Model\ClassDAO</a></code> <var>$classes</var></span>, <span><code><a href="class-Model.DiagramDAO.html">Model\DiagramDAO</a></code> <var>$diagrams</var></span>, <span><code><a href="class-Model.PlacementDAO.html">Model\PlacementDAO</a></code> <var>$placements</var></span> )</code>
 
 		<div class="description short">
 			
@@ -175,7 +182,7 @@ Nette\Object
 
 		<td class="name"><div>
 		<a class="anchor" href="#_execute">#</a>
-		<code><a href="source-class-ClassModule.Model.CommandModel.html#32-81" title="Go to source code">execute</a>( <span>string <var>$command</var></span>, <span><code><a href="class-Model.Entity.Project.html">Model\Entity\Project</a></code> <var>$project</var></span> )</code>
+		<code><a href="source-class-ClassModule.Model.CommandModel.html#40-96" title="Go to source code">execute</a>( <span>string <var>$command</var></span>, <span><code><a href="class-Model.Entity.Project.html">Model\Entity\Project</a></code> <var>$project</var></span> )</code>
 
 		<div class="description short">
 			
@@ -192,9 +199,9 @@ Nette\Object
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$command</var></dt>
-					<dd><code>string</code><br>$command command to execute</dd>
+					<dd><code>string</code><br>command to execute</dd>
 					<dt><var>$project</var></dt>
-					<dd><code>Entity\Project</code><br>$project project to execute on</dd>
+					<dd><code><code><a href="class-Model.Entity.Project.html">Model\Entity\Project</a></code></code><br>project to execute on</dd>
 				</dl></div>
 
 				<h4>Returns</h4>
@@ -228,11 +235,11 @@ Nette\Object
 	<tr data-order="elements" id="$elements">
 		<td class="attributes"><code>
 			protected  
-			mixed
+			<code><a href="class-Model.ElementDAO.html">Model\ElementDAO</a></code>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-ClassModule.Model.CommandModel.html#18" title="Go to source code"><var>$elements</var></a>
+				<a href="source-class-ClassModule.Model.CommandModel.html#21-22" title="Go to source code"><var>$elements</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -251,11 +258,11 @@ Nette\Object
 	<tr data-order="classes" id="$classes">
 		<td class="attributes"><code>
 			protected  
-			mixed
+			<code><a href="class-ClassModule.Model.ClassDAO.html">ClassModule\Model\ClassDAO</a></code>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-ClassModule.Model.CommandModel.html#19" title="Go to source code"><var>$classes</var></a>
+				<a href="source-class-ClassModule.Model.CommandModel.html#23-24" title="Go to source code"><var>$classes</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -274,11 +281,11 @@ Nette\Object
 	<tr data-order="diagrams" id="$diagrams">
 		<td class="attributes"><code>
 			protected  
-			mixed
+			<code><a href="class-Model.DiagramDAO.html">Model\DiagramDAO</a></code>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-ClassModule.Model.CommandModel.html#20" title="Go to source code"><var>$diagrams</var></a>
+				<a href="source-class-ClassModule.Model.CommandModel.html#25-26" title="Go to source code"><var>$diagrams</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -297,11 +304,11 @@ Nette\Object
 	<tr data-order="placements" id="$placements">
 		<td class="attributes"><code>
 			protected  
-			mixed
+			<code><a href="class-Model.PlacementDAO.html">Model\PlacementDAO</a></code>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-ClassModule.Model.CommandModel.html#21" title="Go to source code"><var>$placements</var></a>
+				<a href="source-class-ClassModule.Model.CommandModel.html#27-28" title="Go to source code"><var>$placements</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>

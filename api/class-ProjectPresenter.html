@@ -7,7 +7,7 @@
 	<title>Class ProjectPresenter</title>
 
 	<script type="text/javascript" src="resources/combined.js?1196931423"></script>
-	<script type="text/javascript" src="elementlist.js?1300325317"></script>
+	<script type="text/javascript" src="elementlist.js?1195901333"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -40,6 +40,8 @@
 				<li class="active"><a href="namespace-None.html">None</a>
 						</li>
 				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Test.html">Test</a>
 						</li>
 			</ul>
 		</div>
@@ -79,7 +81,6 @@
 				<li><a href="class-SourceControl.html">SourceControl</a></li>
 				<li><a href="class-SourceControlFactory.html">SourceControlFactory</a></li>
 				<li><a href="class-SourceException.html">SourceException</a></li>
-				<li><a href="class-UmaskedFileStorage.html">UmaskedFileStorage</a></li>
 				<li><a href="class-UserPresenter.html">UserPresenter</a></li>
 			</ul>
 
@@ -94,6 +95,10 @@
 
 
 
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-id.html">id</a></li>
+			</ul>
 		</div>
 	</div>
 </div>
@@ -135,7 +140,7 @@
 
 	<div class="description">
 	
-<p>Base presenter for all application presenters.</p>
+<p>Presenter for project administration</p>
 
 	</div>
 
@@ -173,7 +178,7 @@ Nette\Application\UI\Presenter
 		
 		
 
-		<b>Located at</b> <a href="source-class-ProjectPresenter.html#4-132" title="Go to source code">presenters/ProjectPresenter.php</a><br />
+		<b>Located at</b> <a href="source-class-ProjectPresenter.html#4-156" title="Go to source code">app/presenters/ProjectPresenter.php</a><br />
 	</div>
 
 
@@ -191,7 +196,7 @@ Nette\Application\UI\Presenter
 
 		<td class="name"><div>
 		<a class="anchor" href="#_injectModels">#</a>
-		<code><a href="source-class-ProjectPresenter.html#16-19" title="Go to source code">injectModels</a>( <span><code><a href="class-Model.ProjectDAO.html">Model\ProjectDAO</a></code> <var>$projectModel</var></span>, <span><code><a href="class-Model.UserDAO.html">Model\UserDAO</a></code> <var>$userModel</var></span> )</code>
+		<code><a href="source-class-ProjectPresenter.html#18-23" title="Go to source code">injectModels</a>( <span><code><a href="class-Model.ProjectDAO.html">Model\ProjectDAO</a></code> <var>$projectModel</var></span>, <span><code><a href="class-Model.UserDAO.html">Model\UserDAO</a></code> <var>$userModel</var></span> )</code>
 
 		<div class="description short">
 			
@@ -220,7 +225,7 @@ Nette\Application\UI\Presenter
 
 		<td class="name"><div>
 		<a class="anchor" href="#_startup">#</a>
-		<code><a href="source-class-ProjectPresenter.html#22-26" title="Go to source code">startup</a>( )</code>
+		<code><a href="source-class-ProjectPresenter.html#26-32" title="Go to source code">startup</a>( )</code>
 
 		<div class="description short">
 			
@@ -249,7 +254,7 @@ Nette\Application\UI\Presenter
 
 		<td class="name"><div>
 		<a class="anchor" href="#_renderDefault">#</a>
-		<code><a href="source-class-ProjectPresenter.html#29-33" title="Go to source code">renderDefault</a>( )</code>
+		<code><a href="source-class-ProjectPresenter.html#35-41" title="Go to source code">renderDefault</a>( )</code>
 
 		<div class="description short">
 			
@@ -278,7 +283,7 @@ Nette\Application\UI\Presenter
 
 		<td class="name"><div>
 		<a class="anchor" href="#_actionEdit">#</a>
-		<code><a href="source-class-ProjectPresenter.html#36-45" title="Go to source code">actionEdit</a>( <span>mixed <var>$id</var></span> )</code>
+		<code><a href="source-class-ProjectPresenter.html#44-55" title="Go to source code">actionEdit</a>( <span>mixed <var>$id</var></span> )</code>
 
 		<div class="description short">
 			
@@ -307,7 +312,7 @@ Nette\Application\UI\Presenter
 
 		<td class="name"><div>
 		<a class="anchor" href="#_actionNew">#</a>
-		<code><a href="source-class-ProjectPresenter.html#48-50" title="Go to source code">actionNew</a>( )</code>
+		<code><a href="source-class-ProjectPresenter.html#58-62" title="Go to source code">actionNew</a>( )</code>
 
 		<div class="description short">
 			
@@ -336,7 +341,7 @@ Nette\Application\UI\Presenter
 
 		<td class="name"><div>
 		<a class="anchor" href="#_renderEdit">#</a>
-		<code><a href="source-class-ProjectPresenter.html#53-56" title="Go to source code">renderEdit</a>( )</code>
+		<code><a href="source-class-ProjectPresenter.html#65-70" title="Go to source code">renderEdit</a>( )</code>
 
 		<div class="description short">
 			
@@ -365,7 +370,7 @@ Nette\Application\UI\Presenter
 
 		<td class="name"><div>
 		<a class="anchor" href="#_handleDelete">#</a>
-		<code><a href="source-class-ProjectPresenter.html#59-67" title="Go to source code">handleDelete</a>( )</code>
+		<code><a href="source-class-ProjectPresenter.html#73-83" title="Go to source code">handleDelete</a>( )</code>
 
 		<div class="description short">
 			
@@ -387,14 +392,14 @@ Nette\Application\UI\Presenter
 
 		<td class="attributes"><code>
 			 protected 
-			
+			Nette\Application\UI\Form
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_createComponentProjectForm">#</a>
-		<code><a href="source-class-ProjectPresenter.html#70-83" title="Go to source code">createComponentProjectForm</a>( )</code>
+		<code><a href="source-class-ProjectPresenter.html#86-101" title="Go to source code">createComponentProjectForm</a>( )</code>
 
 		<div class="description short">
 			
@@ -405,6 +410,10 @@ Nette\Application\UI\Presenter
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Nette\Application\UI\Form</code><br />
+				</div>
 
 
 
@@ -423,7 +432,7 @@ Nette\Application\UI\Presenter
 
 		<td class="name"><div>
 		<a class="anchor" href="#_projectFormSucceeded">#</a>
-		<code><a href="source-class-ProjectPresenter.html#86-95" title="Go to source code">projectFormSucceeded</a>( <span>mixed <var>$form</var></span> )</code>
+		<code><a href="source-class-ProjectPresenter.html#104-115" title="Go to source code">projectFormSucceeded</a>( <span>mixed <var>$form</var></span> )</code>
 
 		<div class="description short">
 			
@@ -452,7 +461,7 @@ Nette\Application\UI\Presenter
 
 		<td class="name"><div>
 		<a class="anchor" href="#_handleRemoveUser">#</a>
-		<code><a href="source-class-ProjectPresenter.html#98-102" title="Go to source code">handleRemoveUser</a>( <span>mixed <var>$user</var></span> )</code>
+		<code><a href="source-class-ProjectPresenter.html#118-124" title="Go to source code">handleRemoveUser</a>( <span>mixed <var>$user</var></span> )</code>
 
 		<div class="description short">
 			
@@ -481,7 +490,7 @@ Nette\Application\UI\Presenter
 
 		<td class="name"><div>
 		<a class="anchor" href="#_createComponentAddUserForm">#</a>
-		<code><a href="source-class-ProjectPresenter.html#105-124" title="Go to source code">createComponentAddUserForm</a>( )</code>
+		<code><a href="source-class-ProjectPresenter.html#127-145" title="Go to source code">createComponentAddUserForm</a>( )</code>
 
 		<div class="description short">
 			
@@ -514,7 +523,7 @@ Nette\Application\UI\Presenter
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addUserFormSucceeded">#</a>
-		<code><a href="source-class-ProjectPresenter.html#127-131" title="Go to source code">addUserFormSucceeded</a>( <span>mixed <var>$form</var></span> )</code>
+		<code><a href="source-class-ProjectPresenter.html#148-154" title="Go to source code">addUserFormSucceeded</a>( <span>mixed <var>$form</var></span> )</code>
 
 		<div class="description short">
 			
@@ -566,7 +575,7 @@ Nette\Application\UI\Presenter
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-ProjectPresenter.html#6-7" title="Go to source code"><var>$projectModel</var></a>
+				<a href="source-class-ProjectPresenter.html#8-9" title="Go to source code"><var>$projectModel</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -589,7 +598,7 @@ Nette\Application\UI\Presenter
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-ProjectPresenter.html#9-10" title="Go to source code"><var>$userModel</var></a>
+				<a href="source-class-ProjectPresenter.html#11-12" title="Go to source code"><var>$userModel</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -612,7 +621,7 @@ Nette\Application\UI\Presenter
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-ProjectPresenter.html#12-13" title="Go to source code"><var>$project</var></a>
+				<a href="source-class-ProjectPresenter.html#14-15" title="Go to source code"><var>$project</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>

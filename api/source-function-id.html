@@ -5,10 +5,10 @@
 	<meta name="generator" content="ApiGen 2.8.0" />
 	<meta name="robots" content="noindex" />
 
-	<title>File config/UmaskedFileStorage.local.php</title>
+	<title>File tests/bootstrap.php</title>
 
 	<script type="text/javascript" src="resources/combined.js?1196931423"></script>
-	<script type="text/javascript" src="elementlist.js?1300325317"></script>
+	<script type="text/javascript" src="elementlist.js?1195901333"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -41,6 +41,8 @@
 				<li class="active"><a href="namespace-None.html">None</a>
 						</li>
 				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Test.html">Test</a>
 						</li>
 			</ul>
 		</div>
@@ -80,7 +82,6 @@
 				<li><a href="class-SourceControl.html">SourceControl</a></li>
 				<li><a href="class-SourceControlFactory.html">SourceControlFactory</a></li>
 				<li><a href="class-SourceException.html">SourceException</a></li>
-				<li class="active"><a href="class-UmaskedFileStorage.html">UmaskedFileStorage</a></li>
 				<li><a href="class-UserPresenter.html">UserPresenter</a></li>
 			</ul>
 
@@ -95,6 +96,10 @@
 
 
 
+			<h3>Functions</h3>
+			<ul>
+				<li class="active"><a href="function-id.html">id</a></li>
+			</ul>
 		</div>
 	</div>
 </div>
@@ -119,7 +124,7 @@
 				<a href="namespace-None.html" title="Summary of None"><span>Namespace</span></a>
 			</li>
 			<li>
-				<a href="class-UmaskedFileStorage.html" title="Summary of UmaskedFileStorage"><span>Class</span></a>
+				<a href="function-id.html" title="Summary of id"><span>Function</span></a>
 			</li>
 		</ul>
 		<ul>
@@ -133,26 +138,39 @@
 
 <pre><code><span id="1" class="l"><a class="l" href="#1"> 1: </a><span class="xlang">&lt;?php</span>
 </span><span id="2" class="l"><a class="l" href="#2"> 2: </a>
-</span><span id="3" class="l"><a class="l" href="#3"> 3: </a>
-</span><span id="4" class="l"><a class="l" href="#4"> 4: </a><span class="php-keyword1">class</span> <a id="UmaskedFileStorage" href="#UmaskedFileStorage">UmaskedFileStorage</a> <span class="php-keyword1">extends</span> Nette\Caching\Storages\FileStorage
-</span><span id="5" class="l"><a class="l" href="#5"> 5: </a>{
-</span><span id="6" class="l"><a class="l" href="#6"> 6: </a>
-</span><span id="7" class="l"><a class="l" href="#7"> 7: </a>
-</span><span id="8" class="l"><a class="l" href="#8"> 8: </a>    <span class="php-comment">/*
-</span></span><span id="9" class="l"><a class="l" href="#9"> 9: </a><span class="php-comment">     * Prevents item reading and writing. Lock is released by write() or remove().
-</span></span><span id="10" class="l"><a class="l" href="#10">10: </a><span class="php-comment">     * Sets umask to 0 to make the cache readable/writable by anyone. Use at your own risk.
-</span></span><span id="11" class="l"><a class="l" href="#11">11: </a><span class="php-comment">     * @param  string key
-</span></span><span id="12" class="l"><a class="l" href="#12">12: </a><span class="php-comment">     * @return void
-</span></span><span id="13" class="l"><a class="l" href="#13">13: </a><span class="php-comment">     */</span>
-</span><span id="14" class="l"><a class="l" href="#14">14: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_lock" href="#_lock">lock</a>(<span class="php-var">$key</span>)
-</span><span id="15" class="l"><a class="l" href="#15">15: </a>    {
-</span><span id="16" class="l"><a class="l" href="#16">16: </a>        <span class="php-var">$old</span> = <span class="php-keyword2">umask</span>(<span class="php-num">0</span>);
-</span><span id="17" class="l"><a class="l" href="#17">17: </a>        parent::lock(<span class="php-var">$key</span>);
-</span><span id="18" class="l"><a class="l" href="#18">18: </a>        <span class="php-keyword2">umask</span>(<span class="php-var">$old</span>);
-</span><span id="19" class="l"><a class="l" href="#19">19: </a>    }
+</span><span id="3" class="l"><a class="l" href="#3"> 3: </a><span class="php-keyword1">require</span> __DIR__ . <span class="php-quote">'/../libs/autoload.php'</span>;
+</span><span id="4" class="l"><a class="l" href="#4"> 4: </a>
+</span><span id="5" class="l"><a class="l" href="#5"> 5: </a><span class="php-keyword1">if</span> (!<span class="php-keyword2">class_exists</span>(<span class="php-quote">'Tester\Assert'</span>)) {
+</span><span id="6" class="l"><a class="l" href="#6"> 6: </a>    <span class="php-keyword1">echo</span> <span class="php-quote">'Install Nette Tester using `composer update --dev`'</span>;
+</span><span id="7" class="l"><a class="l" href="#7"> 7: </a>    <span class="php-keyword1">exit</span>(<span class="php-num">1</span>);
+</span><span id="8" class="l"><a class="l" href="#8"> 8: </a>}
+</span><span id="9" class="l"><a class="l" href="#9"> 9: </a>
+</span><span id="10" class="l"><a class="l" href="#10">10: </a>Tester\Helpers::setup();
+</span><span id="11" class="l"><a class="l" href="#11">11: </a>
+</span><span id="12" class="l"><a class="l" href="#12">12: </a><span class="php-keyword1">function</span> <a id="_id" href="#_id">id</a>(<span class="php-var">$val</span>) {
+</span><span id="13" class="l"><a class="l" href="#13">13: </a>    <span class="php-keyword1">return</span> <span class="php-var">$val</span>;
+</span><span id="14" class="l"><a class="l" href="#14">14: </a>}
+</span><span id="15" class="l"><a class="l" href="#15">15: </a>
+</span><span id="16" class="l"><a class="l" href="#16">16: </a>
+</span><span id="17" class="l"><a class="l" href="#17">17: </a><span class="php-var">$configurator</span> = <span class="php-keyword1">new</span> Nette\Config\Configurator;
+</span><span id="18" class="l"><a class="l" href="#18">18: </a><span class="php-var">$configurator</span>-&gt;setDebugMode(<span class="php-keyword1">FALSE</span>);
+</span><span id="19" class="l"><a class="l" href="#19">19: </a><span class="php-var">$configurator</span>-&gt;setTempDirectory(__DIR__ . <span class="php-quote">'/../temp'</span>);
 </span><span id="20" class="l"><a class="l" href="#20">20: </a>
-</span><span id="21" class="l"><a class="l" href="#21">21: </a>}
-</span><span id="22" class="l"><a class="l" href="#22">22: </a></span></code></pre>
+</span><span id="21" class="l"><a class="l" href="#21">21: </a><span class="php-var">$configurator</span>-&gt;createRobotLoader()
+</span><span id="22" class="l"><a class="l" href="#22">22: </a>    -&gt;addDirectory(__DIR__ . <span class="php-quote">'/../app'</span>)
+</span><span id="23" class="l"><a class="l" href="#23">23: </a>    -&gt;register();
+</span><span id="24" class="l"><a class="l" href="#24">24: </a>
+</span><span id="25" class="l"><a class="l" href="#25">25: </a><span class="php-var">$configurator</span>-&gt;addConfig(__DIR__ . <span class="php-quote">'/../app/config/config.neon'</span>, <span class="php-var">$configurator</span>::NONE);
+</span><span id="26" class="l"><a class="l" href="#26">26: </a><span class="php-var">$configurator</span>-&gt;addConfig(__DIR__ . <span class="php-quote">'/../app/config/modules.neon'</span>, <span class="php-var">$configurator</span>::NONE);
+</span><span id="27" class="l"><a class="l" href="#27">27: </a><span class="php-var">$configurator</span>-&gt;addConfig(__DIR__ . <span class="php-quote">'/../app/config/config.local.neon'</span>, <span class="php-var">$configurator</span>::NONE); <span class="php-comment">// none section</span>
+</span><span id="28" class="l"><a class="l" href="#28">28: </a><span class="php-var">$configurator</span>-&gt;addConfig(__DIR__ . <span class="php-quote">'/config.neon'</span>, <span class="php-var">$configurator</span>::NONE);
+</span><span id="29" class="l"><a class="l" href="#29">29: </a>
+</span><span id="30" class="l"><a class="l" href="#30">30: </a><span class="php-var">$configurator</span>-&gt;onCompile[] = <span class="php-keyword1">function</span> (<span class="php-var">$configurator</span>, <span class="php-var">$compiler</span>) {
+</span><span id="31" class="l"><a class="l" href="#31">31: </a>    <span class="php-var">$compiler</span>-&gt;addExtension(<span class="php-quote">'modules'</span>, <span class="php-keyword1">new</span> VojtechDobes\ExtensionsList);
+</span><span id="32" class="l"><a class="l" href="#32">32: </a>};
+</span><span id="33" class="l"><a class="l" href="#33">33: </a>
+</span><span id="34" class="l"><a class="l" href="#34">34: </a><span class="php-keyword1">return</span> <span class="php-var">$configurator</span>-&gt;createContainer();
+</span><span id="35" class="l"><a class="l" href="#35">35: </a></span></code></pre>
 
 	<div id="footer">
 		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>

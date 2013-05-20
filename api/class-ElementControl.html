@@ -7,7 +7,7 @@
 	<title>Class ElementControl</title>
 
 	<script type="text/javascript" src="resources/combined.js?1196931423"></script>
-	<script type="text/javascript" src="elementlist.js?1300325317"></script>
+	<script type="text/javascript" src="elementlist.js?1195901333"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -40,6 +40,8 @@
 				<li class="active"><a href="namespace-None.html">None</a>
 						</li>
 				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Test.html">Test</a>
 						</li>
 			</ul>
 		</div>
@@ -79,7 +81,6 @@
 				<li><a href="class-SourceControl.html">SourceControl</a></li>
 				<li><a href="class-SourceControlFactory.html">SourceControlFactory</a></li>
 				<li><a href="class-SourceException.html">SourceException</a></li>
-				<li><a href="class-UmaskedFileStorage.html">UmaskedFileStorage</a></li>
 				<li><a href="class-UserPresenter.html">UserPresenter</a></li>
 			</ul>
 
@@ -94,6 +95,10 @@
 
 
 
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-id.html">id</a></li>
+			</ul>
 		</div>
 	</div>
 </div>
@@ -133,6 +138,11 @@
 	<h1>Class ElementControl</h1>
 
 
+	<div class="description">
+	
+<p>Basic element form</p>
+
+	</div>
 
 	<dl class="tree">
 		<dd style="padding-left:0px">
@@ -175,7 +185,7 @@ Nette\Application\UI\Control
 		
 		
 
-		<b>Located at</b> <a href="source-class-ElementControl.html#4-98" title="Go to source code">components/ElementControl.php</a><br />
+		<b>Located at</b> <a href="source-class-ElementControl.html#4-114" title="Go to source code">app/components/ElementControl.php</a><br />
 	</div>
 
 
@@ -193,7 +203,7 @@ Nette\Application\UI\Control
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-ElementControl.html#24-28" title="Go to source code">__construct</a>( <span><code><a href="class-Model.BaseDAO.html">Model\BaseDAO</a></code> <var>$model</var></span>, <span><code><a href="class-Model.ElementType.html">Model\ElementType</a></code> <var>$types</var></span>, <span><code><a href="class-FormFactory.html">FormFactory</a></code> <var>$formFactory</var></span> )</code>
+		<code><a href="source-class-ElementControl.html#27-32" title="Go to source code">__construct</a>( <span><code><a href="class-Model.BaseDAO.html">Model\BaseDAO</a></code> <var>$model</var></span>, <span><code><a href="class-Model.ElementType.html">Model\ElementType</a></code> <var>$types</var></span>, <span><code><a href="class-FormFactory.html">FormFactory</a></code> <var>$formFactory</var></span> )</code>
 
 		<div class="description short">
 			
@@ -222,7 +232,7 @@ Nette\Application\UI\Control
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setElement">#</a>
-		<code><a href="source-class-ElementControl.html#31-34" title="Go to source code">setElement</a>( <span><code><a href="class-Model.Entity.Element.html">Model\Entity\Element</a></code> <var>$element</var></span> )</code>
+		<code><a href="source-class-ElementControl.html#35-39" title="Go to source code">setElement</a>( <span><code><a href="class-Model.Entity.Element.html">Model\Entity\Element</a></code> <var>$element</var></span> )</code>
 
 		<div class="description short">
 			
@@ -253,7 +263,7 @@ Nette\Application\UI\Control
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setType">#</a>
-		<code><a href="source-class-ElementControl.html#37-42" title="Go to source code">setType</a>( <span>mixed <var>$type</var></span> )</code>
+		<code><a href="source-class-ElementControl.html#42-48" title="Go to source code">setType</a>( <span>mixed <var>$type</var></span> )</code>
 
 		<div class="description short">
 			
@@ -284,7 +294,7 @@ Nette\Application\UI\Control
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setProject">#</a>
-		<code><a href="source-class-ElementControl.html#45-48" title="Go to source code">setProject</a>( <span><code><a href="class-Model.Entity.Project.html">Model\Entity\Project</a></code> <var>$project</var></span> )</code>
+		<code><a href="source-class-ElementControl.html#51-55" title="Go to source code">setProject</a>( <span><code><a href="class-Model.Entity.Project.html">Model\Entity\Project</a></code> <var>$project</var></span> )</code>
 
 		<div class="description short">
 			
@@ -315,7 +325,7 @@ Nette\Application\UI\Control
 
 		<td class="name"><div>
 		<a class="anchor" href="#_render">#</a>
-		<code><a href="source-class-ElementControl.html#51-53" title="Go to source code">render</a>( )</code>
+		<code><a href="source-class-ElementControl.html#58-62" title="Go to source code">render</a>( )</code>
 
 		<div class="description short">
 			
@@ -341,14 +351,14 @@ Nette\Application\UI\Control
 
 		<td class="attributes"><code>
 			 protected 
-			
+			Nette\Application\UI\Form
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_createComponentForm">#</a>
-		<code><a href="source-class-ElementControl.html#56-71" title="Go to source code">createComponentForm</a>( )</code>
+		<code><a href="source-class-ElementControl.html#65-82" title="Go to source code">createComponentForm</a>( )</code>
 
 		<div class="description short">
 			
@@ -359,6 +369,10 @@ Nette\Application\UI\Control
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Nette\Application\UI\Form</code><br />
+				</div>
 
 
 
@@ -377,7 +391,7 @@ Nette\Application\UI\Control
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addFormControls">#</a>
-		<code><a href="source-class-ElementControl.html#74-76" title="Go to source code">addFormControls</a>( <span>mixed <var>$form</var></span> )</code>
+		<code><a href="source-class-ElementControl.html#85-88" title="Go to source code">addFormControls</a>( <span>mixed <var>$form</var></span> )</code>
 
 		<div class="description short">
 			
@@ -399,14 +413,14 @@ Nette\Application\UI\Control
 
 		<td class="attributes"><code>
 			 public 
-			
+			boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_checkUniqueName">#</a>
-		<code><a href="source-class-ElementControl.html#79-84" title="Go to source code">checkUniqueName</a>( <span>mixed <var>$input</var></span> )</code>
+		<code><a href="source-class-ElementControl.html#91-98" title="Go to source code">checkUniqueName</a>( <span>mixed <var>$input</var></span> )</code>
 
 		<div class="description short">
 			
@@ -417,6 +431,10 @@ Nette\Application\UI\Control
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
 
 
 
@@ -435,7 +453,7 @@ Nette\Application\UI\Control
 
 		<td class="name"><div>
 		<a class="anchor" href="#_formSucceeded">#</a>
-		<code><a href="source-class-ElementControl.html#87-96" title="Go to source code">formSucceeded</a>( <span>mixed <var>$form</var></span> )</code>
+		<code><a href="source-class-ElementControl.html#101-112" title="Go to source code">formSucceeded</a>( <span>mixed <var>$form</var></span> )</code>
 
 		<div class="description short">
 			
@@ -483,7 +501,7 @@ Nette\Application\UI\Control
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-ElementControl.html#7-8" title="Go to source code"><var>$model</var></a>
+				<a href="source-class-ElementControl.html#8-9" title="Go to source code"><var>$model</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -506,7 +524,7 @@ Nette\Application\UI\Control
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-ElementControl.html#10-11" title="Go to source code"><var>$types</var></a>
+				<a href="source-class-ElementControl.html#11-12" title="Go to source code"><var>$types</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -529,7 +547,7 @@ Nette\Application\UI\Control
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-ElementControl.html#13-14" title="Go to source code"><var>$formFactory</var></a>
+				<a href="source-class-ElementControl.html#14-15" title="Go to source code"><var>$formFactory</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -552,7 +570,7 @@ Nette\Application\UI\Control
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-ElementControl.html#16-17" title="Go to source code"><var>$element</var></a>
+				<a href="source-class-ElementControl.html#17-18" title="Go to source code"><var>$element</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -571,11 +589,11 @@ Nette\Application\UI\Control
 	<tr data-order="type" id="$type">
 		<td class="attributes"><code>
 			protected  
-			mixed
+			string
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-ElementControl.html#19" title="Go to source code"><var>$type</var></a>
+				<a href="source-class-ElementControl.html#20-21" title="Go to source code"><var>$type</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -583,10 +601,14 @@ Nette\Application\UI\Control
 
 			<div class="description short">
 				
+<p>element type</p>
+
 			</div>
 
 			<div class="description detailed hidden">
 				
+<p>element type</p>
+
 
 			</div>
 		</div></td>
@@ -598,7 +620,7 @@ Nette\Application\UI\Control
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-ElementControl.html#21-22" title="Go to source code"><var>$project</var></a>
+				<a href="source-class-ElementControl.html#23-24" title="Go to source code"><var>$project</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>

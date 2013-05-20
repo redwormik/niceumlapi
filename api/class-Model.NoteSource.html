@@ -7,7 +7,7 @@
 	<title>Class Model\NoteSource</title>
 
 	<script type="text/javascript" src="resources/combined.js?1196931423"></script>
-	<script type="text/javascript" src="elementlist.js?1300325317"></script>
+	<script type="text/javascript" src="elementlist.js?1195901333"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -40,6 +40,8 @@
 				<li><a href="namespace-None.html">None</a>
 						</li>
 				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Test.html">Test</a>
 						</li>
 			</ul>
 		</div>
@@ -117,6 +119,11 @@
 	<h1>Class NoteSource</h1>
 
 
+	<div class="description">
+	
+<p>Notes source handler</p>
+
+	</div>
 
 	<dl class="tree">
 		<dd style="padding-left:0px">
@@ -147,7 +154,7 @@ Nette\Object
 		<b>Namespace:</b> <a href="namespace-Model.html">Model</a><br />
 		
 
-		<b>Located at</b> <a href="source-class-Model.NoteSource.html#13-67" title="Go to source code">model/NoteSource.php</a><br />
+		<b>Located at</b> <a href="source-class-Model.NoteSource.html#13-81" title="Go to source code">app/model/NoteSource.php</a><br />
 	</div>
 
 
@@ -165,7 +172,7 @@ Nette\Object
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Model.NoteSource.html#19-22" title="Go to source code">__construct</a>( <span><code><a href="class-Model.BaseChildDAO.html">Model\BaseChildDAO</a></code> <var>$dao</var></span> )</code>
+		<code><a href="source-class-Model.NoteSource.html#21-24" title="Go to source code">__construct</a>( <span><code><a href="class-Model.BaseChildDAO.html">Model\BaseChildDAO</a></code> <var>$dao</var></span> )</code>
 
 		<div class="description short">
 			
@@ -187,24 +194,41 @@ Nette\Object
 
 		<td class="attributes"><code>
 			 public 
-			
+			<code><a href="class-Model.Entity.Element.html">Model\Entity\Element</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_load">#</a>
-		<code><a href="source-class-Model.NoteSource.html#25-51" title="Go to source code">load</a>( <span>array <var>$source</var></span>, <span><code><a href="class-Model.Entity.Project.html">Model\Entity\Project</a></code> <var>$project</var></span>, <span>mixed <var>$original</var> = <span class="php-keyword1">NULL</span></span> )</code>
+		<code><a href="source-class-Model.NoteSource.html#27-60" title="Go to source code">load</a>( <span>array <var>$source</var></span>, <span><code><a href="class-Model.Entity.Project.html">Model\Entity\Project</a></code> <var>$project</var></span>, <span><code><a href="class-Model.Entity.Element.html">Model\Entity\Element</a></code>|null <var>$original</var> = <span class="php-keyword1">NULL</span></span> )</code>
 
 		<div class="description short">
 			
+<p>Load one note ($source) into $project</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Load one note ($source) into $project</p>
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$source</var></dt>
+					<dd><code>array</code></dd>
+					<dt><var>$project</var></dt>
+					<dd><code><code><a href="class-Model.Entity.Project.html">Model\Entity\Project</a></code></code></dd>
+					<dt><var>$original</var></dt>
+					<dd><code><code><a href="class-Model.Entity.Element.html">Model\Entity\Element</a></code>|null</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Model.Entity.Element.html">Model\Entity\Element</a></code></code><br />
+				</div>
 
 
 
@@ -218,24 +242,37 @@ Nette\Object
 
 		<td class="attributes"><code>
 			 public 
-			
+			array
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_dump">#</a>
-		<code><a href="source-class-Model.NoteSource.html#54-65" title="Go to source code">dump</a>( <span>mixed <var>$item</var></span> )</code>
+		<code><a href="source-class-Model.NoteSource.html#63-79" title="Go to source code">dump</a>( <span><code><a href="class-Model.Entity.Element.html">Model\Entity\Element</a></code> <var>$item</var></span> )</code>
 
 		<div class="description short">
 			
+<p>Dump one note into source</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Dump one note into source</p>
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$item</var></dt>
+					<dd><code><code><a href="class-Model.Entity.Element.html">Model\Entity\Element</a></code></code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
 
 
 
@@ -263,11 +300,11 @@ Nette\Object
 	<tr data-order="dao" id="$dao">
 		<td class="attributes"><code>
 			protected  
-			mixed
+			<code><a href="class-Model.BaseChildDAO.html">Model\BaseChildDAO</a></code>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Model.NoteSource.html#16" title="Go to source code"><var>$dao</var></a>
+				<a href="source-class-Model.NoteSource.html#17-18" title="Go to source code"><var>$dao</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>

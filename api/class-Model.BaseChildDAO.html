@@ -7,7 +7,7 @@
 	<title>Class Model\BaseChildDAO</title>
 
 	<script type="text/javascript" src="resources/combined.js?1196931423"></script>
-	<script type="text/javascript" src="elementlist.js?1300325317"></script>
+	<script type="text/javascript" src="elementlist.js?1195901333"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -40,6 +40,8 @@
 				<li><a href="namespace-None.html">None</a>
 						</li>
 				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Test.html">Test</a>
 						</li>
 			</ul>
 		</div>
@@ -117,6 +119,11 @@
 	<h1>Class BaseChildDAO</h1>
 
 
+	<div class="description">
+	
+<p>Base data access object for child tables</p>
+
+	</div>
 
 	<dl class="tree">
 		<dd style="padding-left:0px">
@@ -157,7 +164,7 @@ Nette\Object
 		<b>Namespace:</b> <a href="namespace-Model.html">Model</a><br />
 		
 
-		<b>Located at</b> <a href="source-class-Model.BaseChildDAO.html#9-61" title="Go to source code">model/BaseChildDAO.php</a><br />
+		<b>Located at</b> <a href="source-class-Model.BaseChildDAO.html#9-80" title="Go to source code">app/model/BaseChildDAO.php</a><br />
 	</div>
 
 
@@ -175,7 +182,7 @@ Nette\Object
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Model.BaseChildDAO.html#13-16" title="Go to source code">__construct</a>( <span>mixed <var>$tableName</var></span>, <span>Nette\Database\Connection <var>$connection</var></span>, <span><code><a href="class-Model.Database.IEntityFactory.html">Model\Database\IEntityFactory</a></code> <var>$entityFactory</var></span>, <span><code><a href="class-Model.BaseDAO.html">Model\BaseDAO</a></code> <var>$parent</var></span> )</code>
+		<code><a href="source-class-Model.BaseChildDAO.html#17-22" title="Go to source code">__construct</a>( <span>string <var>$tableName</var></span>, <span>Nette\Database\Connection <var>$connection</var></span>, <span><code><a href="class-Model.Database.IEntityFactory.html">Model\Database\IEntityFactory</a></code> <var>$entityFactory</var></span>, <span><code><a href="class-Model.BaseDAO.html">Model\BaseDAO</a></code> <var>$parent</var></span> )</code>
 
 		<div class="description short">
 			
@@ -185,6 +192,17 @@ Nette\Object
 			
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tableName</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$connection</var></dt>
+					<dd></dd>
+					<dt><var>$entityFactory</var></dt>
+					<dd></dd>
+					<dt><var>$parent</var></dt>
+					<dd></dd>
+				</dl></div>
 
 
 
@@ -199,14 +217,14 @@ Nette\Object
 
 		<td class="attributes"><code>
 			 public 
-			
+			<code><a href="class-Model.Entity.BaseEntity.html">Model\Entity\BaseEntity</a></code>|null
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getByParent">#</a>
-		<code><a href="source-class-Model.BaseChildDAO.html#19-24" title="Go to source code">getByParent</a>( <span><code><a href="class-Model.Entity.BaseEntity.html">Model\Entity\BaseEntity</a></code> <var>$parent</var></span> )</code>
+		<code><a href="source-class-Model.BaseChildDAO.html#25-32" title="Go to source code">getByParent</a>( <span><code><a href="class-Model.Entity.BaseEntity.html">Model\Entity\BaseEntity</a></code> <var>$parent</var></span> )</code>
 
 		<div class="description short">
 			
@@ -217,6 +235,10 @@ Nette\Object
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Model.Entity.BaseEntity.html">Model\Entity\BaseEntity</a></code>|null</code><br />
+				</div>
 
 
 
@@ -228,14 +250,14 @@ Nette\Object
 
 		<td class="attributes"><code>
 			 public 
-			
+			<code><a href="class-Model.Entity.BaseEntity.html">Model\Entity\BaseEntity</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_create">#</a>
-		<code><a href="source-class-Model.BaseChildDAO.html#27-36" title="Go to source code">create</a>( <span>mixed <var>$data</var> = <span class="php-keyword1">NULL</span></span> )</code>
+		<code><a href="source-class-Model.BaseChildDAO.html#35-49" title="Go to source code">create</a>( <span>array|<code><a href="class-Traversable.html">Traversable</a></code>|null <var>$data</var> = <span class="php-keyword1">NULL</span></span> )</code>
 
 		<div class="description short">
 			
@@ -245,7 +267,16 @@ Nette\Object
 			
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd><code>array|<code><a href="class-Traversable.html">Traversable</a></code>|null</code></dd>
+				</dl></div>
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Model.Entity.BaseEntity.html">Model\Entity\BaseEntity</a></code></code><br />
+				</div>
 
 
 
@@ -259,14 +290,14 @@ Nette\Object
 
 		<td class="attributes"><code>
 			 public 
-			
+			<code><a href="class-Model.Entity.BaseEntity.html">Model\Entity\BaseEntity</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_save">#</a>
-		<code><a href="source-class-Model.BaseChildDAO.html#39-59" title="Go to source code">save</a>( <span><code><a href="class-Model.Entity.BaseEntity.html">Model\Entity\BaseEntity</a></code> <var>$entity</var> = <span class="php-keyword1">NULL</span></span>, <span>mixed <var>$data</var> = <span class="php-keyword1">NULL</span></span> )</code>
+		<code><a href="source-class-Model.BaseChildDAO.html#52-78" title="Go to source code">save</a>( <span><code><a href="class-Model.Entity.BaseEntity.html">Model\Entity\BaseEntity</a></code> <var>$entity</var> = <span class="php-keyword1">NULL</span></span>, <span>array|<code><a href="class-Traversable.html">Traversable</a></code>|null <var>$data</var> = <span class="php-keyword1">NULL</span></span> )</code>
 
 		<div class="description short">
 			
@@ -276,7 +307,18 @@ Nette\Object
 			
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$entity</var></dt>
+					<dd><code><code><a href="class-Model.Entity.BaseEntity.html">Model\Entity\BaseEntity</a></code></code></dd>
+					<dt><var>$data</var></dt>
+					<dd><code>array|<code><a href="class-Traversable.html">Traversable</a></code>|null</code></dd>
+				</dl></div>
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Model.Entity.BaseEntity.html">Model\Entity\BaseEntity</a></code></code><br />
+				</div>
 
 
 
@@ -316,11 +358,11 @@ Nette\Object
 	<tr data-order="parentModel" id="$parentModel">
 		<td class="attributes"><code>
 			protected  
-			mixed
+			<code><a href="class-Model.BaseDAO.html">Model\BaseDAO</a></code>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Model.BaseChildDAO.html#11" title="Go to source code"><var>$parentModel</var></a>
+				<a href="source-class-Model.BaseChildDAO.html#13-14" title="Go to source code"><var>$parentModel</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>

@@ -7,7 +7,7 @@
 	<title>No namespace</title>
 
 	<script type="text/javascript" src="resources/combined.js?1196931423"></script>
-	<script type="text/javascript" src="elementlist.js?1300325317"></script>
+	<script type="text/javascript" src="elementlist.js?1195901333"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -40,6 +40,8 @@
 				<li class="active"><a href="namespace-None.html">None</a>
 						</li>
 				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Test.html">Test</a>
 						</li>
 			</ul>
 		</div>
@@ -79,7 +81,6 @@
 				<li><a href="class-SourceControl.html">SourceControl</a></li>
 				<li><a href="class-SourceControlFactory.html">SourceControlFactory</a></li>
 				<li><a href="class-SourceException.html">SourceException</a></li>
-				<li><a href="class-UmaskedFileStorage.html">UmaskedFileStorage</a></li>
 				<li><a href="class-UserPresenter.html">UserPresenter</a></li>
 			</ul>
 
@@ -94,6 +95,10 @@
 
 
 
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-id.html">id</a></li>
+			</ul>
 		</div>
 	</div>
 </div>
@@ -137,7 +142,7 @@
 <caption>Classes summary</caption>
 <tr>
 	<td class="name"><a href="class-BaseControl.html">BaseControl</a></td>
-	<td></td>
+	<td>Parent class for all controls</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-BasePresenter.html">BasePresenter</a></td>
@@ -149,31 +154,31 @@
 </tr>
 <tr>
 	<td class="name"><a href="class-ConsoleControl.html">ConsoleControl</a></td>
-	<td></td>
+	<td>Command console control</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-ConsoleControlFactory.html">ConsoleControlFactory</a></td>
-	<td></td>
+	<td>Creates console control from DI container</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-DiagramControlFactory.html">DiagramControlFactory</a></td>
-	<td></td>
+	<td>Creates diagram from DI container by type</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-DiagramPresenter.html">DiagramPresenter</a></td>
-	<td>Base presenter for all application presenters.</td>
+	<td>Presenter for creating, editting and rendering diagrams</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-ElementControl.html">ElementControl</a></td>
-	<td></td>
+	<td>Basic element form</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-ElementControlFactory.html">ElementControlFactory</a></td>
-	<td></td>
+	<td>Creates element control from DI container by type</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-ElementPresenter.html">ElementPresenter</a></td>
-	<td>Base presenter for all application presenters.</td>
+	<td>Presenter for creating and editting elements and relations</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-ErrorPresenter.html">ErrorPresenter</a></td>
@@ -181,11 +186,11 @@
 </tr>
 <tr>
 	<td class="name"><a href="class-ForgotPresenter.html">ForgotPresenter</a></td>
-	<td>Base presenter for all application presenters.</td>
+	<td>Presenter for password resetting</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-FormFactory.html">FormFactory</a></td>
-	<td></td>
+	<td>Creates forms from DI container</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-HomepagePresenter.html">HomepagePresenter</a></td>
@@ -193,71 +198,67 @@
 </tr>
 <tr>
 	<td class="name"><a href="class-MailFactory.html">MailFactory</a></td>
-	<td></td>
+	<td>Creates (from DI container) and configures mail message with template</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-MenuControl.html">MenuControl</a></td>
-	<td></td>
+	<td>Main menu</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-MenuControlFactory.html">MenuControlFactory</a></td>
-	<td></td>
+	<td>Creates menu control from DI container</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-ModellingPresenter.html">ModellingPresenter</a></td>
-	<td>Base presenter for all application presenters.</td>
+	<td>Common parent for presenters working with project model</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-NoteControl.html">NoteControl</a></td>
-	<td></td>
+	<td>Note form</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-ProjectPresenter.html">ProjectPresenter</a></td>
-	<td>Base presenter for all application presenters.</td>
+	<td>Presenter for project administration</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-ProjectTreeControl.html">ProjectTreeControl</a></td>
-	<td></td>
+	<td>Element and diagram list</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-ProjectTreeControlFactory.html">ProjectTreeControlFactory</a></td>
-	<td></td>
+	<td>Creates project tree control from DI container</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-RelationControl.html">RelationControl</a></td>
-	<td></td>
+	<td>Basic relation form</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-RelationControlFactory.html">RelationControlFactory</a></td>
-	<td></td>
+	<td>Creates relation control from DI container by type</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-RoutesExtension.html">RoutesExtension</a></td>
-	<td></td>
+	<td>Config extension for creating routes</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-SignPresenter.html">SignPresenter</a></td>
-	<td>Base presenter for all application presenters.</td>
+	<td>Login presenter</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-SourceControl.html">SourceControl</a></td>
-	<td></td>
+	<td>Source code input and output form</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-SourceControlFactory.html">SourceControlFactory</a></td>
-	<td></td>
+	<td>Creates source control form DI container</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-SourceException.html">SourceException</a></td>
 	<td></td>
 </tr>
 <tr>
-	<td class="name"><a href="class-UmaskedFileStorage.html">UmaskedFileStorage</a></td>
-	<td></td>
-</tr>
-<tr>
 	<td class="name"><a href="class-UserPresenter.html">UserPresenter</a></td>
-	<td>Base presenter for all application presenters.</td>
+	<td>Presenter for user registration and settings</td>
 </tr>
 </table>
 
@@ -265,25 +266,32 @@
 <caption>Interfaces summary</caption>
 <tr>
 	<td class="name"><a href="class-IDiagramControl.html">IDiagramControl</a></td>
-	<td></td>
+	<td>Diaram renderer</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-IElementControl.html">IElementControl</a></td>
-	<td></td>
+	<td>Element form</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-IRelationControl.html">IRelationControl</a></td>
-	<td></td>
+	<td>Relation form</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-IRouterFactory.html">IRouterFactory</a></td>
-	<td></td>
+	<td>Router factory</td>
 </tr>
 </table>
 
 
 
 
+<table class="summary" id="functions">
+<caption>Functions summary</caption>
+<tr>
+	<td class="name"><a href="function-id.html">id</a></td>
+	<td></td>
+</tr>
+</table>
 </div>
 
 	<div id="footer">

@@ -7,7 +7,7 @@
 	<title>Class UserPresenter</title>
 
 	<script type="text/javascript" src="resources/combined.js?1196931423"></script>
-	<script type="text/javascript" src="elementlist.js?1300325317"></script>
+	<script type="text/javascript" src="elementlist.js?1195901333"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -40,6 +40,8 @@
 				<li class="active"><a href="namespace-None.html">None</a>
 						</li>
 				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Test.html">Test</a>
 						</li>
 			</ul>
 		</div>
@@ -79,7 +81,6 @@
 				<li><a href="class-SourceControl.html">SourceControl</a></li>
 				<li><a href="class-SourceControlFactory.html">SourceControlFactory</a></li>
 				<li><a href="class-SourceException.html">SourceException</a></li>
-				<li><a href="class-UmaskedFileStorage.html">UmaskedFileStorage</a></li>
 				<li class="active"><a href="class-UserPresenter.html">UserPresenter</a></li>
 			</ul>
 
@@ -94,6 +95,10 @@
 
 
 
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-id.html">id</a></li>
+			</ul>
 		</div>
 	</div>
 </div>
@@ -135,7 +140,7 @@
 
 	<div class="description">
 	
-<p>Base presenter for all application presenters.</p>
+<p>Presenter for user registration and settings</p>
 
 	</div>
 
@@ -173,7 +178,7 @@ Nette\Application\UI\Presenter
 		
 		
 
-		<b>Located at</b> <a href="source-class-UserPresenter.html#4-91" title="Go to source code">presenters/UserPresenter.php</a><br />
+		<b>Located at</b> <a href="source-class-UserPresenter.html#4-102" title="Go to source code">app/presenters/UserPresenter.php</a><br />
 	</div>
 
 
@@ -191,7 +196,7 @@ Nette\Application\UI\Presenter
 
 		<td class="name"><div>
 		<a class="anchor" href="#_injectUsers">#</a>
-		<code><a href="source-class-UserPresenter.html#10-12" title="Go to source code">injectUsers</a>( <span><code><a href="class-Model.UserDAO.html">Model\UserDAO</a></code> <var>$users</var></span> )</code>
+		<code><a href="source-class-UserPresenter.html#14-18" title="Go to source code">injectUsers</a>( <span><code><a href="class-Model.UserDAO.html">Model\UserDAO</a></code> <var>$users</var></span> )</code>
 
 		<div class="description short">
 			
@@ -220,7 +225,7 @@ Nette\Application\UI\Presenter
 
 		<td class="name"><div>
 		<a class="anchor" href="#_actionDefault">#</a>
-		<code><a href="source-class-UserPresenter.html#15-22" title="Go to source code">actionDefault</a>( )</code>
+		<code><a href="source-class-UserPresenter.html#21-30" title="Go to source code">actionDefault</a>( )</code>
 
 		<div class="description short">
 			
@@ -242,14 +247,14 @@ Nette\Application\UI\Presenter
 
 		<td class="attributes"><code>
 			 protected 
-			
+			Nette\Application\UI\Form
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_createComponentUserForm">#</a>
-		<code><a href="source-class-UserPresenter.html#25-71" title="Go to source code">createComponentUserForm</a>( )</code>
+		<code><a href="source-class-UserPresenter.html#32-80" title="Go to source code">createComponentUserForm</a>( )</code>
 
 		<div class="description short">
 			
@@ -260,6 +265,10 @@ Nette\Application\UI\Presenter
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Nette\Application\UI\Form</code><br />
+				</div>
 
 
 
@@ -278,7 +287,7 @@ Nette\Application\UI\Presenter
 
 		<td class="name"><div>
 		<a class="anchor" href="#_userFormSucceeded">#</a>
-		<code><a href="source-class-UserPresenter.html#74-89" title="Go to source code">userFormSucceeded</a>( <span>mixed <var>$form</var></span> )</code>
+		<code><a href="source-class-UserPresenter.html#83-100" title="Go to source code">userFormSucceeded</a>( <span>mixed <var>$form</var></span> )</code>
 
 		<div class="description short">
 			
@@ -330,7 +339,7 @@ Nette\Application\UI\Presenter
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-UserPresenter.html#6" title="Go to source code"><var>$users</var></a>
+				<a href="source-class-UserPresenter.html#8-9" title="Go to source code"><var>$users</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -343,17 +352,21 @@ Nette\Application\UI\Presenter
 			<div class="description detailed hidden">
 				
 
+					<h4>Return</h4>
+					<div class="list">
+							<code><code><a href="class-Model.UserDAO.html">Model\UserDAO</a></code></code><br />
+					</div>
 			</div>
 		</div></td>
 	</tr>
 	<tr data-order="userDetail" id="$userDetail">
 		<td class="attributes"><code>
 			protected  
-			mixed
+			<code><a href="class-Model.Entity.User.html">Model\Entity\User</a></code>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-UserPresenter.html#7" title="Go to source code"><var>$userDetail</var></a>
+				<a href="source-class-UserPresenter.html#10-11" title="Go to source code"><var>$userDetail</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>

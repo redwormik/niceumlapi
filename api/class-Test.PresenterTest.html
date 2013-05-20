@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="generator" content="ApiGen 2.8.0" />
 
-	<title>Class Model\Database\DIEntityFactory</title>
+	<title>Class Test\PresenterTest</title>
 
 	<script type="text/javascript" src="resources/combined.js?1196931423"></script>
 	<script type="text/javascript" src="elementlist.js?1195901333"></script>
@@ -28,9 +28,9 @@
 				<li><a href="namespace-ClassModule.Model.Entity.html">Entity</a>
 						</li>
 							</ul></li></ul></li>
-				<li class="active"><a href="namespace-Model.html">Model<span></span></a>
+				<li><a href="namespace-Model.html">Model<span></span></a>
 						<ul>
-				<li class="active"><a href="namespace-Model.Database.html">Database</a>
+				<li><a href="namespace-Model.Database.html">Database</a>
 						</li>
 				<li><a href="namespace-Model.Entity.html">Entity</a>
 						</li>
@@ -41,7 +41,7 @@
 						</li>
 				<li><a href="namespace-PHP.html">PHP</a>
 						</li>
-				<li><a href="namespace-Test.html">Test</a>
+				<li class="active"><a href="namespace-Test.html">Test</a>
 						</li>
 			</ul>
 		</div>
@@ -52,18 +52,9 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-Model.Database.ConfigEntityFactory.html">ConfigEntityFactory</a></li>
-				<li class="active"><a href="class-Model.Database.DIEntityFactory.html">DIEntityFactory</a></li>
-				<li><a href="class-Model.Database.GroupedSelection.html">GroupedSelection</a></li>
-				<li><a href="class-Model.Database.NewEntityTable.html">NewEntityTable</a></li>
-				<li><a href="class-Model.Database.Selection.html">Selection</a></li>
-				<li><a href="class-Model.Database.SelectionMixin.html">SelectionMixin</a></li>
+				<li class="active"><a href="class-Test.PresenterTest.html">PresenterTest</a></li>
 			</ul>
 
-			<h3>Interfaces</h3>
-			<ul>
-				<li><a href="class-Model.Database.IEntityFactory.html">IEntityFactory</a></li>
-			</ul>
 
 
 
@@ -89,7 +80,7 @@
 				<a href="index.html" title="Overview"><span>Overview</span></a>
 			</li>
 			<li>
-				<a href="namespace-Model.Database.html" title="Summary of Model\Database"><span>Namespace</span></a>
+				<a href="namespace-Test.html" title="Summary of Test"><span>Namespace</span></a>
 			</li>
 			<li class="active">
 <span>Class</span>			</li>
@@ -104,21 +95,19 @@
 	</div>
 
 <div id="content" class="class">
-	<h1>Class DIEntityFactory</h1>
+	<h1>Class PresenterTest</h1>
 
 
 
 	<dl class="tree">
 		<dd style="padding-left:0px">
-Nette\Object
+Tester\TestCase
 			
 			
 		</dd>
 		<dd style="padding-left:30px">
 			<img src="resources/inherit.png" alt="Extended by" />
-<b><span>Model\Database\DIEntityFactory</span></b>			
-			 implements 
-				<a href="class-Model.Database.IEntityFactory.html"><span>Model\Database\IEntityFactory</span></a>
+<b><span>Test\PresenterTest</span></b>			
 			
 			
 		</dd>
@@ -134,10 +123,10 @@ Nette\Object
 	<div class="info">
 		
 		
-		<b>Namespace:</b> <a href="namespace-Model.html">Model</a>\<a href="namespace-Model.Database.html">Database</a><br />
+		<b>Namespace:</b> <a href="namespace-Test.html">Test</a><br />
 		
 
-		<b>Located at</b> <a href="source-class-Model.Database.DIEntityFactory.html#9-33" title="Go to source code">app/model/database/DIEntityFactory.php</a><br />
+		<b>Located at</b> <a href="source-class-Test.PresenterTest.html#10-63" title="Go to source code">tests/PresenterTest.php</a><br />
 	</div>
 
 
@@ -155,7 +144,7 @@ Nette\Object
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Model.Database.DIEntityFactory.html#17-22" title="Go to source code">__construct</a>( <span>array <var>$services</var></span>, <span>mixed <var>$default</var></span>, <span>Nette\DI\Container <var>$container</var></span> )</code>
+		<code><a href="source-class-Test.PresenterTest.html#20-24" title="Go to source code">__construct</a>( <span>mixed <var>$name</var></span>, <span>Nette\DI\IContainer <var>$container</var></span> )</code>
 
 		<div class="description short">
 			
@@ -173,49 +162,90 @@ Nette\Object
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="create" id="_create">
+	<tr data-order="setUp" id="_setUp">
 
 		<td class="attributes"><code>
-			 public 
-			mixed
+			 protected 
+			
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_create">#</a>
-		<code><a href="source-class-Model.Database.DIEntityFactory.html#25-31" title="Go to source code">create</a>( <span>array <var>$data</var></span>, <span>Nette\Database\Table\Selection <var>$table</var></span> )</code>
+		<a class="anchor" href="#_setUp">#</a>
+		<code><a href="source-class-Test.PresenterTest.html#27-43" title="Go to source code">setUp</a>( )</code>
 
 		<div class="description short">
 			
-<p>Creates entity (table row)</p>
-
 		</div>
 
 		<div class="description detailed hidden">
 			
-<p>Creates entity (table row)</p>
-
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$data</var></dt>
-					<dd><code>array</code><br>data of the row</dd>
-					<dt><var>$table</var></dt>
-					<dd><code>Nette\Database\Table\Selection</code><br>table of the row</dd>
-				</dl></div>
-
-				<h4>Returns</h4>
-				<div class="list">
-					<code>mixed</code><br>created entity<br />
-				</div>
 
 
 
 
-				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-Model.Database.IEntityFactory.html#_create">Model\Database\IEntityFactory::create()</a></code></div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="runAction" id="_runAction">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_runAction">#</a>
+		<code><a href="source-class-Test.PresenterTest.html#46-55" title="Go to source code">runAction</a>( <span>mixed <var>$name</var></span>, <span>mixed <var>$args</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="tearDown" id="_tearDown">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_tearDown">#</a>
+		<code><a href="source-class-Test.PresenterTest.html#58-61" title="Go to source code">tearDown</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
 		</div>
 		</div></td>
 	</tr>
@@ -234,18 +264,18 @@ Nette\Object
 
 	<table class="summary" id="properties">
 	<caption>Properties summary</caption>
-	<tr data-order="services" id="$services">
+	<tr data-order="name" id="$name">
 		<td class="attributes"><code>
 			protected  
 			mixed
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Model.Database.DIEntityFactory.html#12" title="Go to source code"><var>$services</var></a>
+				<a href="source-class-Test.PresenterTest.html#13" title="Go to source code"><var>$name</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
-			<a href="#$services" class="anchor">#</a>
+			<a href="#$name" class="anchor">#</a>
 
 			<div class="description short">
 				
@@ -257,18 +287,18 @@ Nette\Object
 			</div>
 		</div></td>
 	</tr>
-	<tr data-order="default" id="$default">
+	<tr data-order="presenterFactory" id="$presenterFactory">
 		<td class="attributes"><code>
 			protected  
 			mixed
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Model.Database.DIEntityFactory.html#13" title="Go to source code"><var>$default</var></a>
+				<a href="source-class-Test.PresenterTest.html#14" title="Go to source code"><var>$presenterFactory</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
-			<a href="#$default" class="anchor">#</a>
+			<a href="#$presenterFactory" class="anchor">#</a>
 
 			<div class="description short">
 				
@@ -280,18 +310,64 @@ Nette\Object
 			</div>
 		</div></td>
 	</tr>
-	<tr data-order="container" id="$container">
+	<tr data-order="presenter" id="$presenter">
 		<td class="attributes"><code>
 			protected  
 			mixed
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Model.Database.DIEntityFactory.html#14" title="Go to source code"><var>$container</var></a>
+				<a href="source-class-Test.PresenterTest.html#15" title="Go to source code"><var>$presenter</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
-			<a href="#$container" class="anchor">#</a>
+			<a href="#$presenter" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="response" id="$response">
+		<td class="attributes"><code>
+			protected  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Test.PresenterTest.html#16" title="Go to source code"><var>$response</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$response" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="html" id="$html">
+		<td class="attributes"><code>
+			protected  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Test.PresenterTest.html#17" title="Go to source code"><var>$html</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$html" class="anchor">#</a>
 
 			<div class="description short">
 				

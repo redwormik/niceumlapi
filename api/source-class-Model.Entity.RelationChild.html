@@ -5,10 +5,10 @@
 	<meta name="generator" content="ApiGen 2.8.0" />
 	<meta name="robots" content="noindex" />
 
-	<title>File model/entity/RelationChild.php</title>
+	<title>File app/model/entity/RelationChild.php</title>
 
 	<script type="text/javascript" src="resources/combined.js?1196931423"></script>
-	<script type="text/javascript" src="elementlist.js?1300325317"></script>
+	<script type="text/javascript" src="elementlist.js?1195901333"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -41,6 +41,8 @@
 				<li><a href="namespace-None.html">None</a>
 						</li>
 				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Test.html">Test</a>
 						</li>
 			</ul>
 		</div>
@@ -109,19 +111,20 @@
 </span><span id="3" class="l"><a class="l" href="#3"> 3: </a><span class="php-keyword1">namespace</span> Model\Entity;
 </span><span id="4" class="l"><a class="l" href="#4"> 4: </a>
 </span><span id="5" class="l"><a class="l" href="#5"> 5: </a>
-</span><span id="6" class="l"><a class="l" href="#6"> 6: </a><span class="php-keyword1">class</span> <a id="RelationChild" href="#RelationChild">RelationChild</a> <span class="php-keyword1">extends</span> BaseChild {
-</span><span id="7" class="l"><a class="l" href="#7"> 7: </a>
-</span><span id="8" class="l"><a class="l" href="#8"> 8: </a>    <span class="php-keyword1">protected</span> <span class="php-var"><a id="$parentFields" href="#$parentFields">$parentFields</a></span> = <span class="php-keyword1">array</span>(<span class="php-quote">'name'</span>, <span class="php-quote">'start'</span>, <span class="php-quote">'start_id'</span>, <span class="php-quote">'end'</span>, <span class="php-quote">'end_id'</span>, <span class="php-quote">'type'</span>);
-</span><span id="9" class="l"><a class="l" href="#9"> 9: </a>    <span class="php-keyword1">protected</span> <span class="php-var"><a id="$parentMethods" href="#$parentMethods">$parentMethods</a></span> = <span class="php-keyword1">array</span>(<span class="php-quote">'setStart'</span>, <span class="php-quote">'setEnd'</span>, <span class="php-quote">'getOtherEnd'</span>);
-</span><span id="10" class="l"><a class="l" href="#10">10: </a>
-</span><span id="11" class="l"><a class="l" href="#11">11: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_setParent" href="#_setParent">setParent</a>(BaseEntity <span class="php-var">$parent</span>) {
-</span><span id="12" class="l"><a class="l" href="#12">12: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$parent</span> <span class="php-keyword1">instanceof</span> Relation)
-</span><span id="13" class="l"><a class="l" href="#13">13: </a>            <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> \Nette\InvalidArgumentException;
-</span><span id="14" class="l"><a class="l" href="#14">14: </a>        <span class="php-keyword1">return</span> parent::setParent(<span class="php-var">$parent</span>);
-</span><span id="15" class="l"><a class="l" href="#15">15: </a>    }
-</span><span id="16" class="l"><a class="l" href="#16">16: </a>
-</span><span id="17" class="l"><a class="l" href="#17">17: </a>}
-</span><span id="18" class="l"><a class="l" href="#18">18: </a></span></code></pre>
+</span><span id="6" class="l"><a class="l" href="#6"> 6: </a><span class="php-keyword1">class</span> <a id="RelationChild" href="#RelationChild">RelationChild</a> <span class="php-keyword1">extends</span> BaseChild
+</span><span id="7" class="l"><a class="l" href="#7"> 7: </a>{
+</span><span id="8" class="l"><a class="l" href="#8"> 8: </a>
+</span><span id="9" class="l"><a class="l" href="#9"> 9: </a>    <span class="php-keyword1">protected</span> <span class="php-var"><a id="$parentFields" href="#$parentFields">$parentFields</a></span> = <span class="php-keyword1">array</span>(<span class="php-quote">'name'</span>, <span class="php-quote">'start'</span>, <span class="php-quote">'start_id'</span>, <span class="php-quote">'end'</span>, <span class="php-quote">'end_id'</span>, <span class="php-quote">'type'</span>);
+</span><span id="10" class="l"><a class="l" href="#10">10: </a>    <span class="php-keyword1">protected</span> <span class="php-var"><a id="$parentMethods" href="#$parentMethods">$parentMethods</a></span> = <span class="php-keyword1">array</span>(<span class="php-quote">'setStart'</span>, <span class="php-quote">'setEnd'</span>, <span class="php-quote">'getOtherEnd'</span>);
+</span><span id="11" class="l"><a class="l" href="#11">11: </a>
+</span><span id="12" class="l"><a class="l" href="#12">12: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_setParent" href="#_setParent">setParent</a>(BaseEntity <span class="php-var">$parent</span>) {
+</span><span id="13" class="l"><a class="l" href="#13">13: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$parent</span> <span class="php-keyword1">instanceof</span> Relation)
+</span><span id="14" class="l"><a class="l" href="#14">14: </a>            <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> \Nette\InvalidArgumentException;
+</span><span id="15" class="l"><a class="l" href="#15">15: </a>        <span class="php-keyword1">return</span> parent::setParent(<span class="php-var">$parent</span>);
+</span><span id="16" class="l"><a class="l" href="#16">16: </a>    }
+</span><span id="17" class="l"><a class="l" href="#17">17: </a>
+</span><span id="18" class="l"><a class="l" href="#18">18: </a>}
+</span><span id="19" class="l"><a class="l" href="#19">19: </a></span></code></pre>
 
 	<div id="footer">
 		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>

@@ -7,7 +7,7 @@
 	<title>Class Model\RelationDAO</title>
 
 	<script type="text/javascript" src="resources/combined.js?1196931423"></script>
-	<script type="text/javascript" src="elementlist.js?1300325317"></script>
+	<script type="text/javascript" src="elementlist.js?1195901333"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -40,6 +40,8 @@
 				<li><a href="namespace-None.html">None</a>
 						</li>
 				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Test.html">Test</a>
 						</li>
 			</ul>
 		</div>
@@ -117,6 +119,11 @@
 	<h1>Class RelationDAO</h1>
 
 
+	<div class="description">
+	
+<p>Relation data access object</p>
+
+	</div>
 
 	<dl class="tree">
 		<dd style="padding-left:0px">
@@ -152,7 +159,7 @@ Nette\Object
 		<b>Namespace:</b> <a href="namespace-Model.html">Model</a><br />
 		
 
-		<b>Located at</b> <a href="source-class-Model.RelationDAO.html#6-40" title="Go to source code">model/RelationDAO.php</a><br />
+		<b>Located at</b> <a href="source-class-Model.RelationDAO.html#6-52" title="Go to source code">app/model/RelationDAO.php</a><br />
 	</div>
 
 
@@ -163,14 +170,14 @@ Nette\Object
 
 		<td class="attributes"><code>
 			 public 
-			
+			<code><a href="class-Model.Database.Selection.html">Model\Database\Selection</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_findByProject">#</a>
-		<code><a href="source-class-Model.RelationDAO.html#10-16" title="Go to source code">findByProject</a>( <span><code><a href="class-Model.Entity.Project.html">Model\Entity\Project</a></code> <var>$project</var></span>, <span>mixed <var>$types</var> = <span class="php-keyword1">NULL</span></span> )</code>
+		<code><a href="source-class-Model.RelationDAO.html#11-22" title="Go to source code">findByProject</a>( <span><code><a href="class-Model.Entity.Project.html">Model\Entity\Project</a></code> <var>$project</var></span>, <span>mixed <var>$types</var> = <span class="php-keyword1">NULL</span></span> )</code>
 
 		<div class="description short">
 			
@@ -180,7 +187,18 @@ Nette\Object
 			
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$project</var></dt>
+					<dd><code><code><a href="class-Model.Entity.Project.html">Model\Entity\Project</a></code></code></dd>
+					<dt><var>$types</var></dt>
+					<dd><code>mixed</code><br>types to filter by</dd>
+				</dl></div>
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Model.Database.Selection.html">Model\Database\Selection</a></code></code><br />
+				</div>
 
 
 
@@ -192,14 +210,14 @@ Nette\Object
 
 		<td class="attributes"><code>
 			 public 
-			
+			<code><a href="class-Model.Database.Selection.html">Model\Database\Selection</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_findByElements">#</a>
-		<code><a href="source-class-Model.RelationDAO.html#19-32" title="Go to source code">findByElements</a>( <span>mixed <var>$elements</var></span>, <span>mixed <var>$types</var> = <span class="php-keyword1">NULL</span></span> )</code>
+		<code><a href="source-class-Model.RelationDAO.html#25-43" title="Go to source code">findByElements</a>( <span>array|<code><a href="class-Traversable.html">Traversable</a></code> <var>$elements</var></span>, <span>mixed <var>$types</var> = <span class="php-keyword1">NULL</span></span> )</code>
 
 		<div class="description short">
 			
@@ -209,7 +227,18 @@ Nette\Object
 			
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$elements</var></dt>
+					<dd><code>array|<code><a href="class-Traversable.html">Traversable</a></code></code></dd>
+					<dt><var>$types</var></dt>
+					<dd><code>mixed</code><br>types to filter by</dd>
+				</dl></div>
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Model.Database.Selection.html">Model\Database\Selection</a></code></code><br />
+				</div>
 
 
 
@@ -221,14 +250,14 @@ Nette\Object
 
 		<td class="attributes"><code>
 			 public 
-			
+			<code><a href="class-Model.Database.Selection.html">Model\Database\Selection</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_findByElement">#</a>
-		<code><a href="source-class-Model.RelationDAO.html#35-38" title="Go to source code">findByElement</a>( <span><code><a href="class-Model.Entity.Element.html">Model\Entity\Element</a></code> <var>$element</var></span> )</code>
+		<code><a href="source-class-Model.RelationDAO.html#46-50" title="Go to source code">findByElement</a>( <span><code><a href="class-Model.Entity.Element.html">Model\Entity\Element</a></code> <var>$element</var></span> )</code>
 
 		<div class="description short">
 			
@@ -239,6 +268,10 @@ Nette\Object
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Model.Database.Selection.html">Model\Database\Selection</a></code></code><br />
+				</div>
 
 
 

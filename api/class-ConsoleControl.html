@@ -7,7 +7,7 @@
 	<title>Class ConsoleControl</title>
 
 	<script type="text/javascript" src="resources/combined.js?1196931423"></script>
-	<script type="text/javascript" src="elementlist.js?1300325317"></script>
+	<script type="text/javascript" src="elementlist.js?1195901333"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -40,6 +40,8 @@
 				<li class="active"><a href="namespace-None.html">None</a>
 						</li>
 				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Test.html">Test</a>
 						</li>
 			</ul>
 		</div>
@@ -79,7 +81,6 @@
 				<li><a href="class-SourceControl.html">SourceControl</a></li>
 				<li><a href="class-SourceControlFactory.html">SourceControlFactory</a></li>
 				<li><a href="class-SourceException.html">SourceException</a></li>
-				<li><a href="class-UmaskedFileStorage.html">UmaskedFileStorage</a></li>
 				<li><a href="class-UserPresenter.html">UserPresenter</a></li>
 			</ul>
 
@@ -94,6 +95,10 @@
 
 
 
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-id.html">id</a></li>
+			</ul>
 		</div>
 	</div>
 </div>
@@ -133,6 +138,11 @@
 	<h1>Class ConsoleControl</h1>
 
 
+	<div class="description">
+	
+<p>Command console control</p>
+
+	</div>
 
 	<dl class="tree">
 		<dd style="padding-left:0px">
@@ -168,7 +178,7 @@ Nette\Application\UI\Control
 		
 		
 
-		<b>Located at</b> <a href="source-class-ConsoleControl.html#4-70" title="Go to source code">components/ConsoleControl.php</a><br />
+		<b>Located at</b> <a href="source-class-ConsoleControl.html#4-77" title="Go to source code">app/components/ConsoleControl.php</a><br />
 	</div>
 
 
@@ -186,7 +196,7 @@ Nette\Application\UI\Control
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-ConsoleControl.html#16-20" title="Go to source code">__construct</a>( <span><code><a href="class-Model.ICommandModel.html">Model\ICommandModel</a></code> <var>$model</var></span>, <span><code><a href="class-FormFactory.html">FormFactory</a></code> <var>$formFactory</var></span> )</code>
+		<code><a href="source-class-ConsoleControl.html#18-22" title="Go to source code">__construct</a>( <span><code><a href="class-Model.ICommandModel.html">Model\ICommandModel</a></code> <var>$model</var></span>, <span><code><a href="class-FormFactory.html">FormFactory</a></code> <var>$formFactory</var></span> )</code>
 
 		<div class="description short">
 			
@@ -215,7 +225,7 @@ Nette\Application\UI\Control
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setProject">#</a>
-		<code><a href="source-class-ConsoleControl.html#23-26" title="Go to source code">setProject</a>( <span><code><a href="class-Model.Entity.Project.html">Model\Entity\Project</a></code> <var>$project</var></span> )</code>
+		<code><a href="source-class-ConsoleControl.html#25-29" title="Go to source code">setProject</a>( <span><code><a href="class-Model.Entity.Project.html">Model\Entity\Project</a></code> <var>$project</var></span> )</code>
 
 		<div class="description short">
 			
@@ -237,14 +247,14 @@ Nette\Application\UI\Control
 
 		<td class="attributes"><code>
 			 protected 
-			
+			Nette\Application\UI\Form
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_createComponentForm">#</a>
-		<code><a href="source-class-ConsoleControl.html#29-38" title="Go to source code">createComponentForm</a>( )</code>
+		<code><a href="source-class-ConsoleControl.html#32-42" title="Go to source code">createComponentForm</a>( )</code>
 
 		<div class="description short">
 			
@@ -255,6 +265,10 @@ Nette\Application\UI\Control
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Nette\Application\UI\Form</code><br />
+				</div>
 
 
 
@@ -273,7 +287,7 @@ Nette\Application\UI\Control
 
 		<td class="name"><div>
 		<a class="anchor" href="#_formSucceeded">#</a>
-		<code><a href="source-class-ConsoleControl.html#41-63" title="Go to source code">formSucceeded</a>( <span>mixed <var>$form</var></span> )</code>
+		<code><a href="source-class-ConsoleControl.html#45-68" title="Go to source code">formSucceeded</a>( <span>mixed <var>$form</var></span> )</code>
 
 		<div class="description short">
 			
@@ -302,7 +316,7 @@ Nette\Application\UI\Control
 
 		<td class="name"><div>
 		<a class="anchor" href="#_render">#</a>
-		<code><a href="source-class-ConsoleControl.html#66-68" title="Go to source code">render</a>( )</code>
+		<code><a href="source-class-ConsoleControl.html#71-75" title="Go to source code">render</a>( )</code>
 
 		<div class="description short">
 			
@@ -352,7 +366,7 @@ Nette\Application\UI\Control
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-ConsoleControl.html#6-7" title="Go to source code"><var>$project</var></a>
+				<a href="source-class-ConsoleControl.html#8-9" title="Go to source code"><var>$project</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -375,7 +389,7 @@ Nette\Application\UI\Control
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-ConsoleControl.html#9-10" title="Go to source code"><var>$model</var></a>
+				<a href="source-class-ConsoleControl.html#11-12" title="Go to source code"><var>$model</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -398,7 +412,7 @@ Nette\Application\UI\Control
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-ConsoleControl.html#12-13" title="Go to source code"><var>$formFactory</var></a>
+				<a href="source-class-ConsoleControl.html#14-15" title="Go to source code"><var>$formFactory</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>

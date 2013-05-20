@@ -7,7 +7,7 @@
 	<title>Class ClassModule\Model\ClassDAO</title>
 
 	<script type="text/javascript" src="resources/combined.js?1196931423"></script>
-	<script type="text/javascript" src="elementlist.js?1300325317"></script>
+	<script type="text/javascript" src="elementlist.js?1195901333"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -40,6 +40,8 @@
 				<li><a href="namespace-None.html">None</a>
 						</li>
 				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Test.html">Test</a>
 						</li>
 			</ul>
 		</div>
@@ -98,6 +100,11 @@
 	<h1>Class ClassDAO</h1>
 
 
+	<div class="description">
+	
+<p>Classes data access object</p>
+
+	</div>
 
 	<dl class="tree">
 		<dd style="padding-left:0px">
@@ -142,7 +149,7 @@ Nette\Object
 		<b>Namespace:</b> <a href="namespace-ClassModule.html">ClassModule</a>\<a href="namespace-ClassModule.Model.html">Model</a><br />
 		
 
-		<b>Located at</b> <a href="source-class-ClassModule.Model.ClassDAO.html#13-69" title="Go to source code">ClassModule/model/ClassDAO.php</a><br />
+		<b>Located at</b> <a href="source-class-ClassModule.Model.ClassDAO.html#13-84" title="Go to source code">app/ClassModule/model/ClassDAO.php</a><br />
 	</div>
 
 
@@ -153,24 +160,41 @@ Nette\Object
 
 		<td class="attributes"><code>
 			 public 
-			
+			<code><a href="class-Model.Entity.Element.html">Model\Entity\Element</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_load">#</a>
-		<code><a href="source-class-ClassModule.Model.ClassDAO.html#17-45" title="Go to source code">load</a>( <span>array <var>$source</var></span>, <span><code><a href="class-Model.Entity.Project.html">Model\Entity\Project</a></code> <var>$project</var></span>, <span>mixed <var>$original</var> = <span class="php-keyword1">NULL</span></span> )</code>
+		<code><a href="source-class-ClassModule.Model.ClassDAO.html#20-55" title="Go to source code">load</a>( <span>array <var>$source</var></span>, <span><code><a href="class-Model.Entity.Project.html">Model\Entity\Project</a></code> <var>$project</var></span>, <span><code><a href="class-Model.Entity.Element.html">Model\Entity\Element</a></code>|null <var>$original</var> = <span class="php-keyword1">NULL</span></span> )</code>
 
 		<div class="description short">
 			
+<p>Load one class ($source) into $project</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Load one class ($source) into $project</p>
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$source</var></dt>
+					<dd><code>array</code></dd>
+					<dt><var>$project</var></dt>
+					<dd><code><code><a href="class-Model.Entity.Project.html">Model\Entity\Project</a></code></code></dd>
+					<dt><var>$original</var></dt>
+					<dd><code><code><a href="class-Model.Entity.Element.html">Model\Entity\Element</a></code>|null</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Model.Entity.Element.html">Model\Entity\Element</a></code></code><br />
+				</div>
 
 
 
@@ -184,24 +208,37 @@ Nette\Object
 
 		<td class="attributes"><code>
 			 public 
-			
+			array
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_dump">#</a>
-		<code><a href="source-class-ClassModule.Model.ClassDAO.html#48-67" title="Go to source code">dump</a>( <span>mixed <var>$item</var></span> )</code>
+		<code><a href="source-class-ClassModule.Model.ClassDAO.html#58-82" title="Go to source code">dump</a>( <span><code><a href="class-Model.Entity.Element.html">Model\Entity\Element</a></code> <var>$item</var></span> )</code>
 
 		<div class="description short">
 			
+<p>Dump one class into source</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Dump one class into source</p>
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$item</var></dt>
+					<dd><code><code><a href="class-Model.Entity.Element.html">Model\Entity\Element</a></code></code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
 
 
 

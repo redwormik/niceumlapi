@@ -7,7 +7,7 @@
 	<title>Class BasePresenter</title>
 
 	<script type="text/javascript" src="resources/combined.js?1196931423"></script>
-	<script type="text/javascript" src="elementlist.js?1300325317"></script>
+	<script type="text/javascript" src="elementlist.js?1195901333"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -40,6 +40,8 @@
 				<li class="active"><a href="namespace-None.html">None</a>
 						</li>
 				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Test.html">Test</a>
 						</li>
 			</ul>
 		</div>
@@ -79,7 +81,6 @@
 				<li><a href="class-SourceControl.html">SourceControl</a></li>
 				<li><a href="class-SourceControlFactory.html">SourceControlFactory</a></li>
 				<li><a href="class-SourceException.html">SourceException</a></li>
-				<li><a href="class-UmaskedFileStorage.html">UmaskedFileStorage</a></li>
 				<li><a href="class-UserPresenter.html">UserPresenter</a></li>
 			</ul>
 
@@ -94,6 +95,10 @@
 
 
 
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-id.html">id</a></li>
+			</ul>
 		</div>
 	</div>
 </div>
@@ -181,7 +186,7 @@ Nette\Application\UI\Presenter
 		
 		
 
-		<b>Located at</b> <a href="source-class-BasePresenter.html#4-48" title="Go to source code">presenters/BasePresenter.php</a><br />
+		<b>Located at</b> <a href="source-class-BasePresenter.html#4-59" title="Go to source code">app/presenters/BasePresenter.php</a><br />
 	</div>
 
 
@@ -199,7 +204,7 @@ Nette\Application\UI\Presenter
 
 		<td class="name"><div>
 		<a class="anchor" href="#_injectBaseFactories">#</a>
-		<code><a href="source-class-BasePresenter.html#16-19" title="Go to source code">injectBaseFactories</a>( <span><code><a href="class-FormFactory.html">FormFactory</a></code> <var>$form</var></span>, <span><code><a href="class-MenuControlFactory.html">MenuControlFactory</a></code> <var>$menu</var></span> )</code>
+		<code><a href="source-class-BasePresenter.html#17-22" title="Go to source code">injectBaseFactories</a>( <span><code><a href="class-FormFactory.html">FormFactory</a></code> <var>$form</var></span>, <span><code><a href="class-MenuControlFactory.html">MenuControlFactory</a></code> <var>$menu</var></span> )</code>
 
 		<div class="description short">
 			
@@ -221,14 +226,14 @@ Nette\Application\UI\Presenter
 
 		<td class="attributes"><code>
 			 public 
-			
+			Nette\Application\UI\Form
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_createForm">#</a>
-		<code><a href="source-class-BasePresenter.html#22-24" title="Go to source code">createForm</a>( )</code>
+		<code><a href="source-class-BasePresenter.html#25-29" title="Go to source code">createForm</a>( )</code>
 
 		<div class="description short">
 			
@@ -239,6 +244,10 @@ Nette\Application\UI\Presenter
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Nette\Application\UI\Form</code><br />
+				</div>
 
 
 
@@ -250,14 +259,14 @@ Nette\Application\UI\Presenter
 
 		<td class="attributes"><code>
 			 protected 
-			
+			<code><a href="class-MenuControl.html">MenuControl</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_createComponentMenuControl">#</a>
-		<code><a href="source-class-BasePresenter.html#27-29" title="Go to source code">createComponentMenuControl</a>( )</code>
+		<code><a href="source-class-BasePresenter.html#32-36" title="Go to source code">createComponentMenuControl</a>( )</code>
 
 		<div class="description short">
 			
@@ -268,6 +277,10 @@ Nette\Application\UI\Presenter
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-MenuControl.html">MenuControl</a></code></code><br />
+				</div>
 
 
 
@@ -286,7 +299,7 @@ Nette\Application\UI\Presenter
 
 		<td class="name"><div>
 		<a class="anchor" href="#_doInject">#</a>
-		<code><a href="source-class-BasePresenter.html#32-36" title="Go to source code">doInject</a>( <span>mixed <var>$name</var></span>, <span>mixed <var>$dependency</var></span> )</code>
+		<code><a href="source-class-BasePresenter.html#39-45" title="Go to source code">doInject</a>( <span>mixed <var>$name</var></span>, <span>mixed <var>$dependency</var></span> )</code>
 
 		<div class="description short">
 			
@@ -315,7 +328,7 @@ Nette\Application\UI\Presenter
 
 		<td class="name"><div>
 		<a class="anchor" href="#_forbidden">#</a>
-		<code><a href="source-class-BasePresenter.html#39-46" title="Go to source code">forbidden</a>( <span>mixed <var>$msg</var> = <span class="php-keyword1">NULL</span></span> )</code>
+		<code><a href="source-class-BasePresenter.html#48-57" title="Go to source code">forbidden</a>( <span>mixed <var>$msg</var> = <span class="php-keyword1">NULL</span></span> )</code>
 
 		<div class="description short">
 			
@@ -355,7 +368,7 @@ Nette\Application\UI\Presenter
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-BasePresenter.html#9-10" title="Go to source code"><var>$formFactory</var></a>
+				<a href="source-class-BasePresenter.html#10-11" title="Go to source code"><var>$formFactory</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -378,7 +391,7 @@ Nette\Application\UI\Presenter
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-BasePresenter.html#12-13" title="Go to source code"><var>$menuControlFactory</var></a>
+				<a href="source-class-BasePresenter.html#13-14" title="Go to source code"><var>$menuControlFactory</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>

@@ -7,7 +7,7 @@
 	<title>Class Model\DiagramType</title>
 
 	<script type="text/javascript" src="resources/combined.js?1196931423"></script>
-	<script type="text/javascript" src="elementlist.js?1300325317"></script>
+	<script type="text/javascript" src="elementlist.js?1195901333"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -40,6 +40,8 @@
 				<li><a href="namespace-None.html">None</a>
 						</li>
 				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Test.html">Test</a>
 						</li>
 			</ul>
 		</div>
@@ -117,6 +119,11 @@
 	<h1>Class DiagramType</h1>
 
 
+	<div class="description">
+	
+<p>Diagram types manager</p>
+
+	</div>
 
 	<dl class="tree">
 		<dd style="padding-left:0px">
@@ -145,7 +152,7 @@ Nette\Object
 		<b>Namespace:</b> <a href="namespace-Model.html">Model</a><br />
 		
 
-		<b>Located at</b> <a href="source-class-Model.DiagramType.html#8-47" title="Go to source code">model/DiagramType.php</a><br />
+		<b>Located at</b> <a href="source-class-Model.DiagramType.html#8-64" title="Go to source code">app/model/DiagramType.php</a><br />
 	</div>
 
 
@@ -163,7 +170,7 @@ Nette\Object
 
 		<td class="name"><div>
 		<a class="anchor" href="#_add">#</a>
-		<code><a href="source-class-Model.DiagramType.html#14-21" title="Go to source code">add</a>( <span>mixed <var>$type</var></span>, <span>mixed <var>$label</var></span>, <span>array <var>$allowedElements</var> = <span class="php-keyword1">NULL</span></span> )</code>
+		<code><a href="source-class-Model.DiagramType.html#18-31" title="Go to source code">add</a>( <span>string <var>$type</var></span>, <span>string <var>$label</var></span>, <span>array <var>$allowedElements</var> = <span class="php-keyword1">NULL</span></span> )</code>
 
 		<div class="description short">
 			
@@ -173,6 +180,15 @@ Nette\Object
 			
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$type</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$label</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$allowedElements</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
 
 
 
@@ -185,14 +201,14 @@ Nette\Object
 
 		<td class="attributes"><code>
 			 public 
-			
+			boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_has">#</a>
-		<code><a href="source-class-Model.DiagramType.html#24-27" title="Go to source code">has</a>( <span>mixed <var>$type</var></span> )</code>
+		<code><a href="source-class-Model.DiagramType.html#34-41" title="Go to source code">has</a>( <span>string <var>$type</var></span> )</code>
 
 		<div class="description short">
 			
@@ -202,7 +218,16 @@ Nette\Object
 			
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$type</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
 
 
 
@@ -214,14 +239,14 @@ Nette\Object
 
 		<td class="attributes"><code>
 			 public 
-			
+			array
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get">#</a>
-		<code><a href="source-class-Model.DiagramType.html#30-33" title="Go to source code">get</a>( )</code>
+		<code><a href="source-class-Model.DiagramType.html#44-48" title="Go to source code">get</a>( )</code>
 
 		<div class="description short">
 			
@@ -232,6 +257,10 @@ Nette\Object
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
 
 
 
@@ -243,14 +272,14 @@ Nette\Object
 
 		<td class="attributes"><code>
 			 public 
-			
+			array|null
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getElementTypes">#</a>
-		<code><a href="source-class-Model.DiagramType.html#36-39" title="Go to source code">getElementTypes</a>( <span>mixed <var>$type</var></span> )</code>
+		<code><a href="source-class-Model.DiagramType.html#51-55" title="Go to source code">getElementTypes</a>( <span>mixed <var>$type</var></span> )</code>
 
 		<div class="description short">
 			
@@ -261,6 +290,10 @@ Nette\Object
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array|null</code><br />
+				</div>
 
 
 
@@ -272,14 +305,14 @@ Nette\Object
 
 		<td class="attributes"><code>
 			 public 
-			
+			array
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getLabels">#</a>
-		<code><a href="source-class-Model.DiagramType.html#42-45" title="Go to source code">getLabels</a>( )</code>
+		<code><a href="source-class-Model.DiagramType.html#58-62" title="Go to source code">getLabels</a>( )</code>
 
 		<div class="description short">
 			
@@ -290,6 +323,10 @@ Nette\Object
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
 
 
 
@@ -319,7 +356,7 @@ Nette\Object
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Model.DiagramType.html#11" title="Go to source code"><var>$types</var></a>
+				<a href="source-class-Model.DiagramType.html#12-13" title="Go to source code"><var>$types</var></a>
 		</td>
 		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
 		<td class="description"><div>
@@ -327,10 +364,14 @@ Nette\Object
 
 			<div class="description short">
 				
+<p>of type =&gt; label</p>
+
 			</div>
 
 			<div class="description detailed hidden">
 				
+<p>of type =&gt; label</p>
+
 
 			</div>
 		</div></td>
@@ -342,7 +383,7 @@ Nette\Object
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Model.DiagramType.html#12" title="Go to source code"><var>$elements</var></a>
+				<a href="source-class-Model.DiagramType.html#14-15" title="Go to source code"><var>$elements</var></a>
 		</td>
 		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
 		<td class="description"><div>
@@ -350,10 +391,14 @@ Nette\Object
 
 			<div class="description short">
 				
+<p>of type =&gt; allowedELements</p>
+
 			</div>
 
 			<div class="description detailed hidden">
 				
+<p>of type =&gt; allowedELements</p>
+
 
 			</div>
 		</div></td>

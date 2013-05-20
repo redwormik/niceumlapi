@@ -7,7 +7,7 @@
 	<title>Class ForgotPresenter</title>
 
 	<script type="text/javascript" src="resources/combined.js?1196931423"></script>
-	<script type="text/javascript" src="elementlist.js?1300325317"></script>
+	<script type="text/javascript" src="elementlist.js?1195901333"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -40,6 +40,8 @@
 				<li class="active"><a href="namespace-None.html">None</a>
 						</li>
 				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Test.html">Test</a>
 						</li>
 			</ul>
 		</div>
@@ -79,7 +81,6 @@
 				<li><a href="class-SourceControl.html">SourceControl</a></li>
 				<li><a href="class-SourceControlFactory.html">SourceControlFactory</a></li>
 				<li><a href="class-SourceException.html">SourceException</a></li>
-				<li><a href="class-UmaskedFileStorage.html">UmaskedFileStorage</a></li>
 				<li><a href="class-UserPresenter.html">UserPresenter</a></li>
 			</ul>
 
@@ -94,6 +95,10 @@
 
 
 
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-id.html">id</a></li>
+			</ul>
 		</div>
 	</div>
 </div>
@@ -135,7 +140,7 @@
 
 	<div class="description">
 	
-<p>Base presenter for all application presenters.</p>
+<p>Presenter for password resetting</p>
 
 	</div>
 
@@ -173,14 +178,14 @@ Nette\Application\UI\Presenter
 		
 		
 
-		<b>Located at</b> <a href="source-class-ForgotPresenter.html#4-92" title="Go to source code">presenters/ForgotPresenter.php</a><br />
+		<b>Located at</b> <a href="source-class-ForgotPresenter.html#4-114" title="Go to source code">app/presenters/ForgotPresenter.php</a><br />
 	</div>
 
 
 
 	<table class="summary" id="methods">
 	<caption>Methods summary</caption>
-	<tr data-order="njectMailFactory" id="_njectMailFactory">
+	<tr data-order="injectMailFactory" id="_injectMailFactory">
 
 		<td class="attributes"><code>
 			 public 
@@ -190,8 +195,8 @@ Nette\Application\UI\Presenter
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_njectMailFactory">#</a>
-		<code><a href="source-class-ForgotPresenter.html#10-12" title="Go to source code">njectMailFactory</a>( <span><code><a href="class-MailFactory.html">MailFactory</a></code> <var>$mailFactory</var></span> )</code>
+		<a class="anchor" href="#_injectMailFactory">#</a>
+		<code><a href="source-class-ForgotPresenter.html#14-18" title="Go to source code">injectMailFactory</a>( <span><code><a href="class-MailFactory.html">MailFactory</a></code> <var>$mailFactory</var></span> )</code>
 
 		<div class="description short">
 			
@@ -220,7 +225,7 @@ Nette\Application\UI\Presenter
 
 		<td class="name"><div>
 		<a class="anchor" href="#_injectUsers">#</a>
-		<code><a href="source-class-ForgotPresenter.html#15-17" title="Go to source code">injectUsers</a>( <span><code><a href="class-Model.UserDAO.html">Model\UserDAO</a></code> <var>$users</var></span> )</code>
+		<code><a href="source-class-ForgotPresenter.html#21-25" title="Go to source code">injectUsers</a>( <span><code><a href="class-Model.UserDAO.html">Model\UserDAO</a></code> <var>$users</var></span> )</code>
 
 		<div class="description short">
 			
@@ -249,7 +254,7 @@ Nette\Application\UI\Presenter
 
 		<td class="name"><div>
 		<a class="anchor" href="#_startup">#</a>
-		<code><a href="source-class-ForgotPresenter.html#20-24" title="Go to source code">startup</a>( )</code>
+		<code><a href="source-class-ForgotPresenter.html#28-34" title="Go to source code">startup</a>( )</code>
 
 		<div class="description short">
 			
@@ -278,7 +283,7 @@ Nette\Application\UI\Presenter
 
 		<td class="name"><div>
 		<a class="anchor" href="#_actionDefault">#</a>
-		<code><a href="source-class-ForgotPresenter.html#27-30" title="Go to source code">actionDefault</a>( <span>mixed <var>$code</var> = <span class="php-keyword1">NULL</span></span> )</code>
+		<code><a href="source-class-ForgotPresenter.html#37-42" title="Go to source code">actionDefault</a>( <span>mixed <var>$code</var> = <span class="php-keyword1">NULL</span></span> )</code>
 
 		<div class="description short">
 			
@@ -300,14 +305,14 @@ Nette\Application\UI\Presenter
 
 		<td class="attributes"><code>
 			 protected 
-			
+			Nette\Application\UI\Form
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_createComponentForgotForm">#</a>
-		<code><a href="source-class-ForgotPresenter.html#33-40" title="Go to source code">createComponentForgotForm</a>( )</code>
+		<code><a href="source-class-ForgotPresenter.html#45-54" title="Go to source code">createComponentForgotForm</a>( )</code>
 
 		<div class="description short">
 			
@@ -318,6 +323,10 @@ Nette\Application\UI\Presenter
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Nette\Application\UI\Form</code><br />
+				</div>
 
 
 
@@ -336,7 +345,7 @@ Nette\Application\UI\Presenter
 
 		<td class="name"><div>
 		<a class="anchor" href="#_forgotFormSucceeded">#</a>
-		<code><a href="source-class-ForgotPresenter.html#43-62" title="Go to source code">forgotFormSucceeded</a>( <span>mixed <var>$form</var></span> )</code>
+		<code><a href="source-class-ForgotPresenter.html#57-78" title="Go to source code">forgotFormSucceeded</a>( <span>mixed <var>$form</var></span> )</code>
 
 		<div class="description short">
 			
@@ -358,14 +367,14 @@ Nette\Application\UI\Presenter
 
 		<td class="attributes"><code>
 			 protected 
-			
+			Nette\Application\UI\Form
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_createComponentForgotCodeForm">#</a>
-		<code><a href="source-class-ForgotPresenter.html#65-72" title="Go to source code">createComponentForgotCodeForm</a>( )</code>
+		<code><a href="source-class-ForgotPresenter.html#81-90" title="Go to source code">createComponentForgotCodeForm</a>( )</code>
 
 		<div class="description short">
 			
@@ -376,6 +385,10 @@ Nette\Application\UI\Presenter
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Nette\Application\UI\Form</code><br />
+				</div>
 
 
 
@@ -394,7 +407,7 @@ Nette\Application\UI\Presenter
 
 		<td class="name"><div>
 		<a class="anchor" href="#_forgotCodeFormSucceeded">#</a>
-		<code><a href="source-class-ForgotPresenter.html#75-77" title="Go to source code">forgotCodeFormSucceeded</a>( <span>mixed <var>$form</var></span> )</code>
+		<code><a href="source-class-ForgotPresenter.html#93-97" title="Go to source code">forgotCodeFormSucceeded</a>( <span>mixed <var>$form</var></span> )</code>
 
 		<div class="description short">
 			
@@ -423,7 +436,7 @@ Nette\Application\UI\Presenter
 
 		<td class="name"><div>
 		<a class="anchor" href="#_processCode">#</a>
-		<code><a href="source-class-ForgotPresenter.html#80-90" title="Go to source code">processCode</a>( <span>mixed <var>$code</var></span> )</code>
+		<code><a href="source-class-ForgotPresenter.html#100-112" title="Go to source code">processCode</a>( <span>mixed <var>$code</var></span> )</code>
 
 		<div class="description short">
 			
@@ -471,11 +484,11 @@ Nette\Application\UI\Presenter
 	<tr data-order="mailFactory" id="$mailFactory">
 		<td class="attributes"><code>
 			protected  
-			mixed
+			<code><a href="class-MailFactory.html">MailFactory</a></code>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-ForgotPresenter.html#6" title="Go to source code"><var>$mailFactory</var></a>
+				<a href="source-class-ForgotPresenter.html#8-9" title="Go to source code"><var>$mailFactory</var></a>
 		</td>
 		<td class="value"><code><span class="php-keyword1">NULL</span></code></td>
 		<td class="description"><div>
@@ -494,11 +507,11 @@ Nette\Application\UI\Presenter
 	<tr data-order="users" id="$users">
 		<td class="attributes"><code>
 			protected  
-			mixed
+			<code><a href="class-Model.UserDAO.html">Model\UserDAO</a></code>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-ForgotPresenter.html#7" title="Go to source code"><var>$users</var></a>
+				<a href="source-class-ForgotPresenter.html#10-11" title="Go to source code"><var>$users</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>

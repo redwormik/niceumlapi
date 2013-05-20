@@ -7,7 +7,7 @@
 	<title>Class Model\RelationSource</title>
 
 	<script type="text/javascript" src="resources/combined.js?1196931423"></script>
-	<script type="text/javascript" src="elementlist.js?1300325317"></script>
+	<script type="text/javascript" src="elementlist.js?1195901333"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -40,6 +40,8 @@
 				<li><a href="namespace-None.html">None</a>
 						</li>
 				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Test.html">Test</a>
 						</li>
 			</ul>
 		</div>
@@ -117,6 +119,11 @@
 	<h1>Class RelationSource</h1>
 
 
+	<div class="description">
+	
+<p>Relation source handler</p>
+
+	</div>
 
 	<dl class="tree">
 		<dd style="padding-left:0px">
@@ -145,7 +152,7 @@ Nette\Object
 		<b>Namespace:</b> <a href="namespace-Model.html">Model</a><br />
 		
 
-		<b>Located at</b> <a href="source-class-Model.RelationSource.html#10-116" title="Go to source code">model/RelationSource.php</a><br />
+		<b>Located at</b> <a href="source-class-Model.RelationSource.html#10-133" title="Go to source code">app/model/RelationSource.php</a><br />
 	</div>
 
 
@@ -163,7 +170,7 @@ Nette\Object
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Model.RelationSource.html#19-23" title="Go to source code">__construct</a>( <span><code><a href="class-Model.RelationDAO.html">Model\RelationDAO</a></code> <var>$dao</var></span>, <span><code><a href="class-Model.RelationType.html">Model\RelationType</a></code> <var>$types</var></span> )</code>
+		<code><a href="source-class-Model.RelationSource.html#22-26" title="Go to source code">__construct</a>( <span><code><a href="class-Model.RelationDAO.html">Model\RelationDAO</a></code> <var>$dao</var></span>, <span><code><a href="class-Model.RelationType.html">Model\RelationType</a></code> <var>$types</var></span> )</code>
 
 		<div class="description short">
 			
@@ -185,14 +192,14 @@ Nette\Object
 
 		<td class="attributes"><code>
 			 public 
-			
+			<code><a href="class-Model.RelationSource.html">Model\RelationSource</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addType">#</a>
-		<code><a href="source-class-Model.RelationSource.html#26-32" title="Go to source code">addType</a>( <span>mixed <var>$name</var></span>, <span><code><a href="class-Model.ISourceModel.html">Model\ISourceModel</a></code> <var>$model</var></span> )</code>
+		<code><a href="source-class-Model.RelationSource.html#29-39" title="Go to source code">addType</a>( <span>string <var>$name</var></span>, <span><code><a href="class-Model.ISourceModel.html">Model\ISourceModel</a></code> <var>$model</var></span> )</code>
 
 		<div class="description short">
 			
@@ -202,7 +209,18 @@ Nette\Object
 			
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$model</var></dt>
+					<dd></dd>
+				</dl></div>
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Model.RelationSource.html">Model\RelationSource</a></code></code><br>provides a fluent interface<br />
+				</div>
 
 
 
@@ -214,14 +232,14 @@ Nette\Object
 
 		<td class="attributes"><code>
 			 public 
-			
+			array
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_load">#</a>
-		<code><a href="source-class-Model.RelationSource.html#35-86" title="Go to source code">load</a>( <span>array <var>$source</var></span>, <span><code><a href="class-Model.Entity.Project.html">Model\Entity\Project</a></code> <var>$project</var></span>, <span>array <var>$elements</var></span> )</code>
+		<code><a href="source-class-Model.RelationSource.html#42-99" title="Go to source code">load</a>( <span>array <var>$source</var></span>, <span><code><a href="class-Model.Entity.Project.html">Model\Entity\Project</a></code> <var>$project</var></span>, <span>array <var>$elements</var></span> )</code>
 
 		<div class="description short">
 			
@@ -231,7 +249,20 @@ Nette\Object
 			
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$source</var></dt>
+					<dd><code>array</code><br>source to load</dd>
+					<dt><var>$project</var></dt>
+					<dd><code><code><a href="class-Model.Entity.Project.html">Model\Entity\Project</a></code></code><br>project to load to</dd>
+					<dt><var>$elements</var></dt>
+					<dd><code>array</code><br>elements to use</dd>
+				</dl></div>
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>of relations<br />
+				</div>
 
 
 
@@ -243,14 +274,14 @@ Nette\Object
 
 		<td class="attributes"><code>
 			 public 
-			
+			array
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_dump">#</a>
-		<code><a href="source-class-Model.RelationSource.html#89-114" title="Go to source code">dump</a>( <span><code><a href="class-Model.Entity.Project.html">Model\Entity\Project</a></code> <var>$project</var></span> )</code>
+		<code><a href="source-class-Model.RelationSource.html#102-131" title="Go to source code">dump</a>( <span><code><a href="class-Model.Entity.Project.html">Model\Entity\Project</a></code> <var>$project</var></span> )</code>
 
 		<div class="description short">
 			
@@ -260,7 +291,16 @@ Nette\Object
 			
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$project</var></dt>
+					<dd><code><code><a href="class-Model.Entity.Project.html">Model\Entity\Project</a></code></code></dd>
+				</dl></div>
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
 
 
 
@@ -286,11 +326,11 @@ Nette\Object
 	<tr data-order="dao" id="$dao">
 		<td class="attributes"><code>
 			protected  
-			mixed
+			<code><a href="class-Model.RelationDAO.html">Model\RelationDAO</a></code>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Model.RelationSource.html#13" title="Go to source code"><var>$dao</var></a>
+				<a href="source-class-Model.RelationSource.html#14-15" title="Go to source code"><var>$dao</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -309,11 +349,11 @@ Nette\Object
 	<tr data-order="types" id="$types">
 		<td class="attributes"><code>
 			protected  
-			mixed
+			<code><a href="class-Model.RelationType.html">Model\RelationType</a></code>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Model.RelationSource.html#14" title="Go to source code"><var>$types</var></a>
+				<a href="source-class-Model.RelationSource.html#16-17" title="Go to source code"><var>$types</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -336,7 +376,7 @@ Nette\Object
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Model.RelationSource.html#16" title="Go to source code"><var>$models</var></a>
+				<a href="source-class-Model.RelationSource.html#18-19" title="Go to source code"><var>$models</var></a>
 		</td>
 		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
 		<td class="description"><div>
@@ -344,10 +384,14 @@ Nette\Object
 
 			<div class="description short">
 				
+<p>of type =&gt; ISourceModel</p>
+
 			</div>
 
 			<div class="description detailed hidden">
 				
+<p>of type =&gt; ISourceModel</p>
+
 
 			</div>
 		</div></td>
